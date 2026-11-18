@@ -44,7 +44,8 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:inherit}
 .bento__n{font:var(--weight-semibold) var(--text-eyebrow-size)/1 var(--font-body);letter-spacing:var(--text-eyebrow-ls);text-transform:uppercase;opacity:.8}
 
 /* case visual */
-.case-visual{aspect-ratio:16/9;width:100%}
+.case-visual{aspect-ratio:16/9;width:100%;display:block;border-radius:var(--radius-card)}
+.portrait-art{width:100%;height:100%;display:block}
 .ds-card--case .ds-card__tags{margin-top:0}
 
 /* testimonials */
@@ -94,4 +95,3 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:inherit}
 }
 figure.ds-card,.ds-card blockquote{margin:0}
 .center .ds-sechead{align-items:center;text-align:center;margin-inline:auto}
-.grid-4 .ds-card__price{font-size:var(--text-h3-size)}

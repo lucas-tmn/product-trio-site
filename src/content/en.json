@@ -13,7 +13,6 @@
   "nav": {
     "services": "Services",
     "work": "Work",
-    "pricing": "Pricing",
     "team": "Team",
     "contact": "Contact"
   },
@@ -167,7 +166,6 @@
       {
         "name": "Discovery sprint",
         "summary": "2 to 4 weeks, one decision made.",
-        "from": "[Price]",
         "items": [
           "Blueprint and scope",
           "Build-or-buy analysis",
@@ -179,7 +177,6 @@
       {
         "name": "Embedded squad",
         "summary": "Monthly retainer, working inside your team.",
-        "from": "[Price / month]",
         "items": [
           "Product, delivery and data leads",
           "Weekly roadmap review"
@@ -190,7 +187,6 @@
       {
         "name": "End-to-end delivery",
         "summary": "Milestone-based, from scoped MVP to stable operation.",
-        "from": "[Price]",
         "items": [
           "Fixed milestones and owners",
           "Vetted partners where needed"
@@ -201,7 +197,6 @@
       {
         "name": "Run and support",
         "summary": "Monthly retainer after launch.",
-        "from": "[Price / month]",
         "items": [
           "Rollout and training",
           "Monitoring and monthly review"
@@ -349,56 +344,6 @@
     "authorName": "[Author name]",
     "authorBio": "[Role. One line of relevant experience.]",
     "authorInitials": "AN"
-  },
-  "pricing": {
-    "path": "pricing",
-    "eyebrow": "Engagement models",
-    "title": "[Starting from, by engagement shape]",
-    "lead": "[Prices are starting points; scope sets the final figure.]",
-    "columns": [
-      "Discovery sprint",
-      "Embedded squad",
-      "End-to-end delivery",
-      "Run and support"
-    ],
-    "rows": [
-      {
-        "label": "Starting from",
-        "values": [
-          "[Price]",
-          "[Price / month]",
-          "[Price]",
-          "[Price / month]"
-        ]
-      },
-      {
-        "label": "Duration",
-        "values": [
-          "[2 to 4 weeks]",
-          "[3+ months]",
-          "[8 to 12 weeks]",
-          "[6+ months]"
-        ]
-      },
-      {
-        "label": "Team",
-        "values": [
-          "[1 to 2 partners]",
-          "[Named partner + support]",
-          "[3 partners]",
-          "[Named partner + support]"
-        ]
-      },
-      {
-        "label": "Outcome",
-        "values": [
-          "[One decision]",
-          "[Ongoing capacity]",
-          "[One shipped outcome]",
-          "[Stable operation]"
-        ]
-      }
-    ]
   },
   "strip": {
     "label": "Industries we have worked in",
@@ -574,7 +519,7 @@
       },
       {
         "q": "How is the work priced?",
-        "a": "Each engagement model has a starting price on the pricing page. Scope sets the final figure and is agreed before work starts."
+        "a": "Scope sets the price. After a first call we send a fixed quote or a monthly rate, agreed before work starts."
       }
     ]
   }

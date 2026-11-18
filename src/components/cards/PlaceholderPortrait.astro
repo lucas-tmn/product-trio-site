@@ -1,0 +1,17 @@
+---
+// Illustrated stand-in for a team photo. Replace by passing `photo` to TeamCard.
+interface Props { variant?: number }
+const v = (Astro.props.variant ?? 0) % 3;
+const bg = ['var(--indigo-100)', 'var(--tangerine-100)', 'var(--mint-100)'][v];
+const body = ['var(--indigo-700)', 'var(--indigo-900)', 'var(--tangerine-500)'][v];
+const hair = ['var(--indigo-900)', 'var(--ink-900)', 'var(--indigo-700)'][v];
+---
+<svg class="portrait-art" viewBox="0 0 240 300" role="presentation" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice">
+  <rect width="240" height="300" fill={bg} />
+  <path d="M20 300 C20 226 70 206 120 206 S220 226 220 300 Z" fill={body} />
+  <path d="M100 196 H140 V226 C140 238 100 238 100 226 Z" fill="var(--paper-50)" opacity="0.9" />
+  <ellipse cx="120" cy="140" rx="46" ry="54" fill="var(--paper-50)" />
+  {v === 0 && <path d="M72 132 C70 84 100 70 124 72 C152 72 170 92 168 132 C156 108 130 102 100 106 C86 108 78 118 72 132 Z" fill={hair} />}
+  {v === 1 && <path d="M70 128 C66 78 98 64 122 66 C154 66 176 88 170 128 C160 98 132 92 104 98 C88 102 76 112 70 128 Z" fill={hair} />}
+  {v === 2 && <path d="M74 126 C74 86 96 74 122 74 C148 74 168 90 166 126 C152 110 134 106 120 106 C104 106 86 110 74 126 Z" fill={hair} />}
+</svg>

@@ -6,7 +6,7 @@ import { getContent, path, fill, type Lang } from '../i18n/utils';
 import interLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 import jakartaLatin from '@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2?url';
 
-interface Props { lang: Lang; page?: string; current?: 'pricing'; title?: string; }
+interface Props { lang: Lang; page?: string; current?: string; title?: string; }
 const { lang, page = '', current, title } = Astro.props;
 const t = getContent(lang);
 const other: Lang = lang === 'en' ? 'vi' : 'en';
@@ -14,7 +14,6 @@ const home = path(lang);
 const links = [
   { label: t.nav.services, href: `${home}#services` },
   { label: t.nav.work, href: `${home}#work` },
-  { label: t.nav.pricing, href: path(lang, 'pricing'), current: current === 'pricing' },
   { label: t.nav.team, href: `${home}#team` },
   { label: t.nav.contact, href: `${home}#contact` },
 ];

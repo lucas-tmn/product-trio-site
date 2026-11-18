@@ -1,14 +1,15 @@
 ---
+import CaseVisual from './CaseVisual.astro';
 import Chip from '../core/Chip.astro';
 interface Props {
   industry: string; title: string; metric: string; metricLabel: string; owner: string; href?: string;
-  visual?: string; tags?: string[]; [key: string]: unknown;
+  visual?: number; tags?: string[]; [key: string]: unknown;
 }
 const { industry, title, metric, metricLabel, owner, href, visual, tags = [], ...rest } = Astro.props;
 const Tag = href ? 'a' : 'article';
 ---
 <Tag class="ds-card ds-card--case" href={href} {...rest}>
-  {visual && <div class="ds-ph case-visual">{visual}</div>}
+  {visual !== undefined && <CaseVisual variant={visual} />}
   <span class="ds-eyebrow">{industry}</span>
   <h3 class="ds-h3">{title}</h3>
   <div class="ds-stat"><span class="ds-metric">{metric}</span><span class="ds-stat__label">{metricLabel}</span></div>

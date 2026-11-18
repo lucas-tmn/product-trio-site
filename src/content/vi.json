@@ -13,7 +13,6 @@
   "nav": {
     "services": "Dịch vụ",
     "work": "Dự án",
-    "pricing": "Chi phí",
     "team": "Đội ngũ",
     "contact": "Liên hệ"
   },
@@ -167,7 +166,6 @@
       {
         "name": "Discovery sprint",
         "summary": "2 đến 4 tuần, một quyết định được chốt.",
-        "from": "[Giá]",
         "items": [
           "Blueprint và phạm vi",
           "Phân tích xây hay mua",
@@ -179,7 +177,6 @@
       {
         "name": "Embedded squad",
         "summary": "Phí hằng tháng, làm việc ngay trong đội của bạn.",
-        "from": "[Giá / tháng]",
         "items": [
           "Lead product, delivery và data",
           "Rà soát lộ trình hằng tuần"
@@ -190,7 +187,6 @@
       {
         "name": "Triển khai trọn gói",
         "summary": "Theo mốc bàn giao, từ MVP đã xác định phạm vi đến vận hành ổn định.",
-        "from": "[Giá]",
         "items": [
           "Mốc bàn giao và người phụ trách cố định",
           "Đối tác được thẩm định khi cần"
@@ -201,7 +197,6 @@
       {
         "name": "Vận hành và hỗ trợ",
         "summary": "Phí hằng tháng sau khi ra mắt.",
-        "from": "[Giá / tháng]",
         "items": [
           "Triển khai và đào tạo",
           "Giám sát và rà soát hằng tháng"
@@ -349,56 +344,6 @@
     "authorName": "[Tên tác giả]",
     "authorBio": "[Vai trò. Một dòng về kinh nghiệm liên quan.]",
     "authorInitials": "TG"
-  },
-  "pricing": {
-    "path": "pricing",
-    "eyebrow": "Hình thức hợp tác",
-    "title": "[Chỉ từ, theo từng hình thức hợp tác]",
-    "lead": "[Giá là mức khởi điểm; phạm vi công việc quyết định con số cuối cùng.]",
-    "columns": [
-      "Discovery sprint",
-      "Embedded squad",
-      "Triển khai trọn gói",
-      "Vận hành và hỗ trợ"
-    ],
-    "rows": [
-      {
-        "label": "Chỉ từ",
-        "values": [
-          "[Giá]",
-          "[Giá / tháng]",
-          "[Giá]",
-          "[Giá / tháng]"
-        ]
-      },
-      {
-        "label": "Thời lượng",
-        "values": [
-          "[2 đến 4 tuần]",
-          "[3+ tháng]",
-          "[8 đến 12 tuần]",
-          "[6+ tháng]"
-        ]
-      },
-      {
-        "label": "Đội ngũ",
-        "values": [
-          "[1 đến 2 partner]",
-          "[Partner chính + hỗ trợ]",
-          "[3 partner]",
-          "[Partner chính + hỗ trợ]"
-        ]
-      },
-      {
-        "label": "Kết quả",
-        "values": [
-          "[Một quyết định]",
-          "[Năng lực liên tục]",
-          "[Một kết quả đã phát hành]",
-          "[Vận hành ổn định]"
-        ]
-      }
-    ]
   },
   "strip": {
     "label": "Các ngành chúng tôi đã làm việc",
@@ -574,7 +519,7 @@
       },
       {
         "q": "Chi phí được tính như thế nào?",
-        "a": "Mỗi hình thức hợp tác có mức giá khởi điểm trên trang chi phí. Phạm vi công việc quyết định con số cuối cùng và được thống nhất trước khi bắt đầu."
+        "a": "Phạm vi quyết định chi phí. Sau cuộc gọi đầu tiên, chúng tôi gửi báo giá trọn gói hoặc mức phí theo tháng, thống nhất trước khi bắt đầu."
       }
     ]
   }
