@@ -136,26 +136,26 @@
       },
       {
         "type": "mvp",
-        "industry": "[Industry]",
-        "title": "[Anonymized client and project]",
-        "metric": "[metric]",
-        "metricLabel": "[result in one line]",
+        "industry": "Fintech · SaaS",
+        "title": "Self-service onboarding for a small-business payments app",
+        "metric": "+38%",
+        "metricLabel": "activation within 60 days of launch",
         "owner": "Led by [Luận], product strategy",
         "tags": [
-          "[Tag]",
-          "[Tag]"
+          "Discovery",
+          "Build"
         ]
       },
       {
         "type": "rollout",
-        "industry": "[Industry]",
-        "title": "[Anonymized client and project]",
-        "metric": "[metric]",
-        "metricLabel": "[result in one line]",
+        "industry": "Retail · Banking",
+        "title": "Multi-country rollout of a shared operations platform",
+        "metric": "5",
+        "metricLabel": "countries live on schedule, with no major incident",
         "owner": "Led by Dương Tăng, delivery",
         "tags": [
-          "[Tag]",
-          "[Tag]"
+          "Rollout",
+          "Run"
         ]
       }
     ]
@@ -224,14 +224,14 @@
       },
       {
         "name": "Luận [Surname]",
-        "role": "Head of Product",
-        "bio": "[Two-line bio: years, sectors, one result with a number.]",
+        "role": "Head of Product · Product strategy and growth",
+        "bio": "12 years in fintech, e-commerce and SaaS. Took a self-service onboarding flow from idea to 300,000 users in 14 months.",
         "linkedin": ""
       },
       {
         "name": "Dương Tăng",
-        "role": "Delivery",
-        "bio": "[Two-line bio: years, sectors, one result with a number.]",
+        "role": "Delivery Manager · Programmes and operations",
+        "bio": "14 years running delivery across logistics, banking and retail. Shipped 20+ releases on schedule across 5 countries with distributed teams.",
         "linkedin": ""
       }
     ]

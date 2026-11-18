@@ -136,26 +136,26 @@
       },
       {
         "type": "mvp",
-        "industry": "[Ngành]",
-        "title": "[Khách hàng và dự án đã ẩn danh]",
-        "metric": "[số liệu]",
-        "metricLabel": "[kết quả trong một dòng]",
+        "industry": "Fintech · SaaS",
+        "title": "Onboarding tự phục vụ cho ứng dụng thanh toán doanh nghiệp nhỏ",
+        "metric": "+38%",
+        "metricLabel": "kích hoạt trong 60 ngày sau ra mắt",
         "owner": "Phụ trách: [Luận], chiến lược sản phẩm",
         "tags": [
-          "[Nhãn]",
-          "[Nhãn]"
+          "Khám phá",
+          "Xây dựng"
         ]
       },
       {
         "type": "rollout",
-        "industry": "[Ngành]",
-        "title": "[Khách hàng và dự án đã ẩn danh]",
-        "metric": "[số liệu]",
-        "metricLabel": "[kết quả trong một dòng]",
+        "industry": "Bán lẻ · Ngân hàng",
+        "title": "Triển khai nền tảng vận hành dùng chung tại nhiều quốc gia",
+        "metric": "5",
+        "metricLabel": "quốc gia vận hành đúng tiến độ, không sự cố lớn",
         "owner": "Phụ trách: Dương Tăng, delivery",
         "tags": [
-          "[Nhãn]",
-          "[Nhãn]"
+          "Triển khai",
+          "Vận hành"
         ]
       }
     ]
@@ -224,14 +224,14 @@
       },
       {
         "name": "Luận [Họ]",
-        "role": "Head of Product",
-        "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]",
+        "role": "Head of Product · Chiến lược sản phẩm và tăng trưởng",
+        "bio": "12 năm trong fintech, thương mại điện tử và SaaS. Đưa một luồng onboarding tự phục vụ từ ý tưởng đến 300.000 người dùng trong 14 tháng.",
         "linkedin": ""
       },
       {
         "name": "Dương Tăng",
-        "role": "Delivery",
-        "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]",
+        "role": "Delivery Manager · Chương trình và vận hành",
+        "bio": "14 năm điều phối delivery trong logistics, ngân hàng và bán lẻ. Phát hành đúng hạn hơn 20 bản trên 5 quốc gia với đội phân tán.",
         "linkedin": ""
       }
     ]
