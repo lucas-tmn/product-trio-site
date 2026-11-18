@@ -53,6 +53,7 @@ const footerColumns = [
       lang={lang.toUpperCase() as 'EN' | 'VI'}
       langHrefs={langHrefs}
       labels={{ primary: t.a11y.primaryNav, language: t.a11y.language, menu: t.a11y.menu, close: t.a11y.close }}
+      cta={{ label: t.labels.letsTalk, href: `${home}#contact` }}
     />
     <main id="main" tabindex="-1">
       <slot />

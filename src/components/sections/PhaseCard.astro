@@ -1,0 +1,10 @@
+---
+interface Props { n: string; title: string; tagline: string; items: string[]; }
+const { n, title, tagline, items } = Astro.props;
+---
+<article class="ds-card phase">
+  <span class="phase__n">{n}</span>
+  <h3 class="ds-h3">{title}</h3>
+  <p class="ds-body-s">{tagline}</p>
+  <ul class="ds-card__list">{items.map((i) => <li>{i}</li>)}</ul>
+</article>

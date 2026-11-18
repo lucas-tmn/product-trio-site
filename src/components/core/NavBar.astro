@@ -6,8 +6,9 @@ interface Props {
   lang: 'EN' | 'VI';
   langHrefs: { EN: string; VI: string };
   labels: { primary: string; language: string; menu: string; close: string };
+  cta?: { label: string; href: string };
 }
-const { brand = '[Team Name]', homeHref, links, lang, langHrefs, labels } = Astro.props;
+const { brand = '[Team Name]', homeHref, links, lang, langHrefs, labels, cta } = Astro.props;
 ---
 <header class="ds-nav" id="nav">
   <div class="ds-container">
@@ -24,6 +25,7 @@ const { brand = '[Team Name]', homeHref, links, lang, langHrefs, labels } = Astr
             <button type="button" aria-pressed={lang === x ? 'true' : 'false'} data-lang-href={langHrefs[x]} lang={x.toLowerCase()}>{x}</button>
           ))}
         </div>
+        {cta && <a class="ds-btn ds-btn--secondary nav-cta" href={cta.href}>{cta.label}</a>}
         <button type="button" class="ds-menu-btn" aria-expanded="false" aria-controls="m-menu" data-label-open={labels.menu} data-label-close={labels.close}>{labels.menu}</button>
       </div>
     </div>

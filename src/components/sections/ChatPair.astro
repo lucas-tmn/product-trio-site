@@ -1,0 +1,8 @@
+---
+interface Props { q: string; a: string; youLabel: string; teamLabel: string; }
+const { q, a, youLabel, teamLabel } = Astro.props;
+---
+<div class="stack--sm stack">
+  <div class="bubble bubble--q"><span class="bubble__who">{youLabel}</span>{q}</div>
+  <div class="bubble bubble--a"><span class="bubble__who">{teamLabel}</span>{a}</div>
+</div>

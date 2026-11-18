@@ -1,0 +1,9 @@
+---
+interface Props { n: string; title: string; body: string; variant: 1 | 2 | 3 | 4; }
+const { n, title, body, variant } = Astro.props;
+---
+<article class={`bento__card bento__card--${variant}`} data-band={variant === 1 ? 'indigo' : undefined}>
+  <span class="bento__n">{n}</span>
+  <h3 class="ds-h3">{title}</h3>
+  <p class="ds-body-s">{body}</p>
+</article>

@@ -1,0 +1,8 @@
+---
+interface Props { label: string; items: string[]; }
+const { label, items } = Astro.props;
+---
+<div class="strip">
+  <p class="ds-caption strip__label">{label}</p>
+  <ul class="strip__list">{items.map((i) => <li>{i}</li>)}</ul>
+</div>

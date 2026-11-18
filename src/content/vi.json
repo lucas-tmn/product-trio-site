@@ -3,8 +3,20 @@
     "title": "[Tên team] · Chiến lược sản phẩm, triển khai và data/AI",
     "description": "Đội ba chuyên gia senior tại Việt Nam. Chiến lược sản phẩm, triển khai và sẵn sàng data/AI cho doanh nghiệp trong nước và quốc tế."
   },
-  "a11y": { "skip": "Chuyển đến nội dung", "primaryNav": "Điều hướng chính", "language": "Ngôn ngữ", "menu": "Menu", "close": "Đóng" },
-  "nav": { "services": "Dịch vụ", "work": "Dự án", "pricing": "Chi phí", "team": "Đội ngũ", "contact": "Liên hệ" },
+  "a11y": {
+    "skip": "Chuyển đến nội dung",
+    "primaryNav": "Điều hướng chính",
+    "language": "Ngôn ngữ",
+    "menu": "Menu",
+    "close": "Đóng"
+  },
+  "nav": {
+    "services": "Dịch vụ",
+    "work": "Dự án",
+    "pricing": "Chi phí",
+    "team": "Đội ngũ",
+    "contact": "Liên hệ"
+  },
   "labels": {
     "anonymized": "Đã ẩn danh",
     "startingFrom": "Chỉ từ",
@@ -14,86 +26,189 @@
     "portraitAlt": "Ảnh chân dung của",
     "bookCall": "Đặt lịch trao đổi",
     "seeWork": "Xem dự án",
-    "backHome": "Về trang chủ"
+    "backHome": "Về trang chủ",
+    "letsTalk": "Trao đổi",
+    "askUs": "Đặt câu hỏi cho chúng tôi",
+    "you": "Bạn",
+    "team": "Team",
+    "visualPlaceholder": "[hình dự án đã làm mờ]"
   },
   "hero": {
-    "eyebrow": "Chiến lược sản phẩm · Triển khai · Data & AI",
-    "title": "Từ con số 0 đến quy mô lớn. Product, delivery và data/AI do chính người senior thực hiện, không cồng kềnh như agency.",
-    "lead": "Đội ba chuyên gia senior tại Việt Nam. Chúng tôi đưa sản phẩm và vận hành từ khám phá đến áp dụng thực tế, ở nhiều ngành khác nhau.",
+    "eyebrow": "Chiến lược · Thiết kế · Triển khai · Hỗ trợ vận hành",
+    "before": "",
+    "highlight": "Một đội senior",
+    "after": "đồng hành từ ý tưởng đầu tiên đến vận hành hằng ngày.",
+    "lead": "Chiến lược sản phẩm, thiết kế, triển khai và hỗ trợ vận hành cho doanh nghiệp trong nước và quốc tế. Chúng tôi ở lại đến khi sản phẩm được dùng hằng ngày và con số thực sự thay đổi.",
     "primary": "Đặt lịch trao đổi 30 phút",
-    "secondary": "Xem dự án tiêu biểu",
-    "visual": "[sơ đồ kiến trúc hoặc wireframe đã làm mờ]"
+    "secondary": "Xem dự án tiêu biểu"
   },
   "proof": [
-    { "value": "100,000+", "label": "cửa hàng được đưa lên một nền tảng đặt hàng B2B" },
-    { "value": "4+", "label": "quốc gia triển khai trên một sản phẩm lõi" },
-    { "value": "3", "label": "chuyên gia senior tham gia mọi dự án" }
-  ],
-  "problem": {
-    "eyebrow": "Vấn đề",
-    "title": "Phần lớn sản phẩm số thất bại vì chiến lược, không phải vì code.",
-    "items": [
-      { "title": "Mục tiêu lệch nhau", "body": "Kinh doanh, vận hành và công nghệ mỗi bên tối ưu một kết quả khác nhau." },
-      { "title": "Tuyển người quá sớm", "body": "Lãnh đạo product toàn thời gian được thuê khi bài toán còn chưa rõ." },
-      { "title": "Pilot bị dừng giữa chừng", "body": "Bản demo tốt nhưng không có kế hoạch áp dụng và không có người chịu trách nhiệm sau khi ra mắt." }
-    ]
-  },
-  "services": {
-    "eyebrow": "Dịch vụ",
-    "title": "Sáu dịch vụ, một đội senior",
-    "lead": "Mỗi dịch vụ kết thúc bằng một quyết định đã được đưa ra hoặc một hệ thống đang được dùng, không phải một bộ slide.",
-    "items": [
-      { "title": "Khám phá sản phẩm 0→1", "body": "Chiến lược, phạm vi MVP, business case và đánh giá nên tự xây hay mua, để bản phát hành đầu tiên trả lời đúng câu hỏi.", "tags": ["Chiến lược", "MVP", "Xây hay mua"] },
-      { "title": "Triển khai và mở rộng", "body": "Triển khai Agile, UAT, sẵn sàng phát hành và quản trị thay đổi cho đến khi người dùng thực sự dùng sản phẩm.", "tags": ["Agile", "UAT", "Áp dụng"] },
-      { "title": "Số hóa quy trình", "body": "Giấy tờ, bảng tính và công cụ cũ được thay bằng hệ thống mà đội vận hành sẵn sàng sử dụng.", "tags": ["Hệ thống cũ", "Vận hành", "Tích hợp"] },
-      { "title": "Sẵn sàng cho data và AI", "body": "Định nghĩa KPI, quản trị dữ liệu và semantic model, để AI chạy trên những con số mà doanh nghiệp tin cậy.", "tags": ["KPI", "Quản trị", "AI"] },
-      { "title": "Lãnh đạo product bán thời gian", "body": "Một lãnh đạo product senior làm việc trong đội của bạn, không cần tuyển toàn thời gian.", "tags": ["Retainer", "Lộ trình"] },
-      { "title": "Đánh giá nhà cung cấp", "body": "Mức độ phù hợp, chi phí, khả năng mở rộng, công sức tích hợp và bảo mật được đánh giá trước khi ký hợp đồng.", "tags": ["Lựa chọn", "Hợp đồng"] }
-    ]
-  },
-  "approach": {
-    "eyebrow": "Cách làm",
-    "title": "Bốn bước từ câu hỏi đến sản phẩm được áp dụng",
-    "steps": [
-      { "title": "Khám phá", "body": "Vẽ lại quy trình và các điểm ra quyết định. Tìm đúng bài toán." },
-      { "title": "Định nghĩa", "body": "Thống nhất phạm vi, KPI và các đánh đổi trước khi xây bất cứ thứ gì." },
-      { "title": "Triển khai", "body": "Phát hành theo từng phần nhỏ, mỗi phần có một người chịu trách nhiệm." },
-      { "title": "Áp dụng", "body": "Đào tạo, đo lường và cải tiến cho đến khi con số thay đổi." }
-    ],
-    "callout": {
-      "eyebrow": "Sẵn sàng mở rộng",
-      "title": "Cần hơn ba người? Đối tác được sàng lọc trước khi tham gia.",
-      "body": "Đối tác kỹ thuật và thiết kế được đánh giá về mức độ phù hợp, chi phí, khả năng mở rộng và bảo mật bởi chính những người sẽ điều hành dự án của bạn."
+    {
+      "value": "100,000+",
+      "label": "cửa hàng được đưa lên một nền tảng đặt hàng B2B"
+    },
+    {
+      "value": "4+",
+      "label": "quốc gia triển khai trên một sản phẩm lõi"
+    },
+    {
+      "value": "3",
+      "label": "chuyên gia senior tham gia mọi dự án"
     }
-  },
+  ],
   "work": {
     "eyebrow": "Dự án tiêu biểu",
-    "title": "Dự án tiêu biểu, kèm con số",
+    "title": "Dự án tiêu biểu, kèm *con số*",
     "filterLabel": "Lọc theo dịch vụ",
     "countTemplate": "Hiển thị {n} trên {total} dự án",
     "filters": [
-      { "id": "all", "label": "Tất cả" },
-      { "id": "mvp", "label": "MVP 0→1" },
-      { "id": "rollout", "label": "Mở rộng và triển khai" },
-      { "id": "digitalization", "label": "Số hóa quy trình" },
-      { "id": "data", "label": "Sẵn sàng dữ liệu" }
+      {
+        "id": "all",
+        "label": "Tất cả"
+      },
+      {
+        "id": "mvp",
+        "label": "MVP 0→1"
+      },
+      {
+        "id": "rollout",
+        "label": "Mở rộng và triển khai"
+      },
+      {
+        "id": "digitalization",
+        "label": "Số hóa quy trình"
+      },
+      {
+        "id": "data",
+        "label": "Sẵn sàng dữ liệu"
+      }
     ],
     "cases": [
-      { "type": "mvp", "industry": "Bán lẻ · B2B", "title": "Nền tảng đặt hàng B2B cho cửa hàng tạp hóa", "metric": "100,000+", "metricLabel": "cửa hàng được đưa lên đặt hàng trực tuyến", "owner": "Phụ trách: Lucas Trịnh, product", "link": true },
-      { "type": "rollout", "industry": "Di chuyển · Đa thị trường", "title": "Nền tảng vận hành tài xế và đội xe triển khai tại hơn bốn quốc gia", "metric": "4+", "metricLabel": "quốc gia trên một sản phẩm lõi, cấu hình theo quy định lao động từng nước", "owner": "Phụ trách: Lucas Trịnh, product" },
-      { "type": "digitalization", "industry": "Logistics", "title": "Theo dõi vận tải đầu cuối cho khách hàng B2B và nhà vận chuyển", "metric": "100%", "metricLabel": "mục tiêu triển khai tại Việt Nam đã đạt", "owner": "Phụ trách: Lucas Trịnh, product" },
-      { "type": "data", "industry": "Chuỗi cung ứng · Sản xuất", "title": "Thống nhất định nghĩa KPI và control tower phục vụ quyết định kế hoạch", "metric": "[số liệu]", "metricLabel": "[kết quả trong một dòng]", "owner": "Phụ trách: Lucas Trịnh, product" },
-      { "type": "mvp", "industry": "[Ngành]", "title": "[Khách hàng và dự án đã ẩn danh]", "metric": "[số liệu]", "metricLabel": "[kết quả trong một dòng]", "owner": "Phụ trách: [Luận], chiến lược sản phẩm" },
-      { "type": "rollout", "industry": "[Ngành]", "title": "[Khách hàng và dự án đã ẩn danh]", "metric": "[số liệu]", "metricLabel": "[kết quả trong một dòng]", "owner": "Phụ trách: Dương Tăng, delivery" }
+      {
+        "type": "mvp",
+        "industry": "Bán lẻ · B2B",
+        "title": "Nền tảng đặt hàng B2B cho cửa hàng tạp hóa",
+        "metric": "100,000+",
+        "metricLabel": "cửa hàng được đưa lên đặt hàng trực tuyến",
+        "owner": "Phụ trách: Lucas Trịnh, product",
+        "link": true,
+        "tags": [
+          "Khám phá",
+          "Xây dựng",
+          "Vận hành"
+        ]
+      },
+      {
+        "type": "rollout",
+        "industry": "Di chuyển · Đa thị trường",
+        "title": "Nền tảng vận hành tài xế và đội xe triển khai tại hơn bốn quốc gia",
+        "metric": "4+",
+        "metricLabel": "quốc gia trên một sản phẩm lõi, cấu hình theo quy định lao động từng nước",
+        "owner": "Phụ trách: Lucas Trịnh, product",
+        "tags": [
+          "Xây dựng",
+          "Triển khai"
+        ]
+      },
+      {
+        "type": "digitalization",
+        "industry": "Logistics",
+        "title": "Theo dõi vận tải đầu cuối cho khách hàng B2B và nhà vận chuyển",
+        "metric": "100%",
+        "metricLabel": "mục tiêu triển khai tại Việt Nam đã đạt",
+        "owner": "Phụ trách: Lucas Trịnh, product",
+        "tags": [
+          "Triển khai",
+          "Vận hành"
+        ]
+      },
+      {
+        "type": "data",
+        "industry": "Chuỗi cung ứng · Sản xuất",
+        "title": "Thống nhất định nghĩa KPI và control tower phục vụ quyết định kế hoạch",
+        "metric": "[số liệu]",
+        "metricLabel": "[kết quả trong một dòng]",
+        "owner": "Phụ trách: Lucas Trịnh, product",
+        "tags": [
+          "Tư vấn",
+          "Dữ liệu"
+        ]
+      },
+      {
+        "type": "mvp",
+        "industry": "[Ngành]",
+        "title": "[Khách hàng và dự án đã ẩn danh]",
+        "metric": "[số liệu]",
+        "metricLabel": "[kết quả trong một dòng]",
+        "owner": "Phụ trách: [Luận], chiến lược sản phẩm",
+        "tags": [
+          "[Nhãn]",
+          "[Nhãn]"
+        ]
+      },
+      {
+        "type": "rollout",
+        "industry": "[Ngành]",
+        "title": "[Khách hàng và dự án đã ẩn danh]",
+        "metric": "[số liệu]",
+        "metricLabel": "[kết quả trong một dòng]",
+        "owner": "Phụ trách: Dương Tăng, delivery",
+        "tags": [
+          "[Nhãn]",
+          "[Nhãn]"
+        ]
+      }
     ]
   },
   "engagement": {
     "eyebrow": "Hình thức hợp tác",
-    "title": "Chọn hình thức phù hợp với câu hỏi của bạn",
+    "title": "Chọn hình thức phù hợp với *câu hỏi* của bạn",
     "items": [
-      { "name": "Discovery sprint", "summary": "2 đến 4 tuần, một quyết định được chốt.", "from": "[Giá]", "items": ["Blueprint và phạm vi", "Phân tích xây hay mua", "Prototype có thể thao tác"], "cta": "Trao đổi về sprint", "featured": true },
-      { "name": "Embedded squad", "summary": "Phí hằng tháng, làm việc ngay trong đội của bạn.", "from": "[Giá / tháng]", "items": ["Lead product, delivery và data", "Rà soát lộ trình hằng tuần"], "cta": "Trao đổi về retainer", "featured": false },
-      { "name": "Triển khai trọn gói", "summary": "Theo mốc bàn giao, từ MVP đã xác định phạm vi đến vận hành ổn định.", "from": "[Giá]", "items": ["Mốc bàn giao và người phụ trách cố định", "Đối tác được thẩm định khi cần"], "cta": "Trao đổi về triển khai", "featured": false }
+      {
+        "name": "Discovery sprint",
+        "summary": "2 đến 4 tuần, một quyết định được chốt.",
+        "from": "[Giá]",
+        "items": [
+          "Blueprint và phạm vi",
+          "Phân tích xây hay mua",
+          "Prototype có thể thao tác"
+        ],
+        "cta": "Trao đổi về sprint",
+        "featured": true
+      },
+      {
+        "name": "Embedded squad",
+        "summary": "Phí hằng tháng, làm việc ngay trong đội của bạn.",
+        "from": "[Giá / tháng]",
+        "items": [
+          "Lead product, delivery và data",
+          "Rà soát lộ trình hằng tuần"
+        ],
+        "cta": "Trao đổi về squad",
+        "featured": false
+      },
+      {
+        "name": "Triển khai trọn gói",
+        "summary": "Theo mốc bàn giao, từ MVP đã xác định phạm vi đến vận hành ổn định.",
+        "from": "[Giá]",
+        "items": [
+          "Mốc bàn giao và người phụ trách cố định",
+          "Đối tác được thẩm định khi cần"
+        ],
+        "cta": "Trao đổi về triển khai",
+        "featured": false
+      },
+      {
+        "name": "Vận hành và hỗ trợ",
+        "summary": "Phí hằng tháng sau khi ra mắt.",
+        "from": "[Giá / tháng]",
+        "items": [
+          "Triển khai và đào tạo",
+          "Giám sát và rà soát hằng tháng"
+        ],
+        "cta": "Trao đổi về hỗ trợ",
+        "featured": false
+      }
     ]
   },
   "team": {
@@ -101,9 +216,24 @@
     "title": "Ba chuyên gia senior trong mọi dự án",
     "note": "Bạn làm việc trực tiếp với cả ba người chúng tôi. Không giao lại cho người mới.",
     "members": [
-      { "name": "Lucas Trịnh", "role": "Chiến lược sản phẩm · Chuỗi cung ứng và dữ liệu", "bio": "15 năm trong logistics, bán lẻ và di chuyển. Đã triển khai nền tảng tài xế tại hơn bốn quốc gia và nền tảng B2B cho hơn 100.000 cửa hàng.", "linkedin": "https://linkedin.com/in/mnhut-trinh" },
-      { "name": "Luận [Họ]", "role": "Head of Product", "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]", "linkedin": "" },
-      { "name": "Dương Tăng", "role": "Delivery", "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]", "linkedin": "" }
+      {
+        "name": "Lucas Trịnh",
+        "role": "Chiến lược sản phẩm · Chuỗi cung ứng và dữ liệu",
+        "bio": "15 năm trong logistics, bán lẻ và di chuyển. Đã triển khai nền tảng tài xế tại hơn bốn quốc gia và nền tảng B2B cho hơn 100.000 cửa hàng.",
+        "linkedin": "https://linkedin.com/in/mnhut-trinh"
+      },
+      {
+        "name": "Luận [Họ]",
+        "role": "Head of Product",
+        "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]",
+        "linkedin": ""
+      },
+      {
+        "name": "Dương Tăng",
+        "role": "Delivery",
+        "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]",
+        "linkedin": ""
+      }
     ]
   },
   "contact": {
@@ -118,7 +248,12 @@
       "emailError": "Nhập email theo dạng ten@congty.com",
       "nameError": "Nhập họ tên của bạn",
       "need": "Bạn cần gì?",
-      "needOptions": ["Chiến lược sản phẩm", "Triển khai", "Sẵn sàng cho data và AI", "Chưa chắc"],
+      "needOptions": [
+        "Chiến lược sản phẩm",
+        "Triển khai",
+        "Sẵn sàng cho data và AI",
+        "Chưa chắc"
+      ],
       "context": "Bối cảnh",
       "contextPlaceholder": "[Hai câu về tình huống của bạn]",
       "send": "Gửi tin nhắn",
@@ -126,7 +261,9 @@
       "subject": "Liên hệ từ website"
     }
   },
-  "cta": { "title": "Có sản phẩm cần xây, sửa hoặc mở rộng?" },
+  "cta": {
+    "title": "Có sản phẩm cần xây, sửa hoặc mở rộng?"
+  },
   "footer": {
     "tagline": "Đội product, delivery và data/AI senior tại TP. Hồ Chí Minh.",
     "site": "Trang web",
@@ -140,21 +277,62 @@
     "title": "[Nhà cung cấp logistics top 3 tại Việt Nam]: [kết quả trong một dòng]",
     "lead": "[Bối cảnh trong một câu: ai, điều gì đang bị đe dọa.]",
     "proof": [
-      { "value": "−31%", "label": "[kết quả chính]" },
-      { "value": "5 tháng", "label": "[thời gian đạt kết quả]" },
-      { "value": "3", "label": "[vai trò trong đội dự án]" }
+      {
+        "value": "−31%",
+        "label": "[kết quả chính]"
+      },
+      {
+        "value": "5 tháng",
+        "label": "[thời gian đạt kết quả]"
+      },
+      {
+        "value": "3",
+        "label": "[vai trò trong đội dự án]"
+      }
     ],
-    "meta": { "industry": "Ngành", "scope": "Phạm vi", "duration": "Thời lượng", "industryValue": "[Ngành]", "scopeValue": "[Phạm vi]", "durationValue": "[Thời lượng]" },
+    "meta": {
+      "industry": "Ngành",
+      "scope": "Phạm vi",
+      "duration": "Thời lượng",
+      "industryValue": "[Ngành]",
+      "scopeValue": "[Phạm vi]",
+      "durationValue": "[Thời lượng]"
+    },
     "sections": [
-      { "eyebrow": "Bối cảnh", "title": "Tình huống", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" },
-      { "eyebrow": "Thách thức", "title": "Điểm vướng", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" },
-      { "eyebrow": "Quyết định", "title": "Quyết định chính và các đánh đổi", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" },
-      { "eyebrow": "Kết quả", "title": "Kết quả", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" }
+      {
+        "eyebrow": "Bối cảnh",
+        "title": "Tình huống",
+        "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]"
+      },
+      {
+        "eyebrow": "Thách thức",
+        "title": "Điểm vướng",
+        "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]"
+      },
+      {
+        "eyebrow": "Quyết định",
+        "title": "Quyết định chính và các đánh đổi",
+        "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]"
+      },
+      {
+        "eyebrow": "Kết quả",
+        "title": "Kết quả",
+        "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]"
+      }
     ],
     "deliverables": [
-      { "placeholder": "[wireframe]", "caption": "Wireframe, chi tiết đã làm mờ" },
-      { "placeholder": "[sơ đồ kiến trúc]", "caption": "Sơ đồ kiến trúc, chi tiết đã làm mờ" },
-      { "placeholder": "[lộ trình]", "caption": "Lộ trình, chi tiết đã làm mờ" }
+      {
+        "placeholder": "[wireframe]",
+        "caption": "Wireframe, chi tiết đã làm mờ"
+      },
+      {
+        "placeholder": "[sơ đồ kiến trúc]",
+        "caption": "Sơ đồ kiến trúc, chi tiết đã làm mờ"
+      },
+      {
+        "placeholder": "[lộ trình]",
+        "caption": "Lộ trình, chi tiết đã làm mờ"
+      }
     ],
     "ctaTitle": "Đang đứng trước một quyết định tương tự?"
   },
@@ -177,12 +355,227 @@
     "eyebrow": "Hình thức hợp tác",
     "title": "[Chỉ từ, theo từng hình thức hợp tác]",
     "lead": "[Giá là mức khởi điểm; phạm vi công việc quyết định con số cuối cùng.]",
-    "columns": ["Discovery sprint", "Embedded squad", "Triển khai trọn gói"],
+    "columns": [
+      "Discovery sprint",
+      "Embedded squad",
+      "Triển khai trọn gói",
+      "Vận hành và hỗ trợ"
+    ],
     "rows": [
-      { "label": "Chỉ từ", "values": ["[Giá]", "[Giá / tháng]", "[Giá]"] },
-      { "label": "Thời lượng", "values": ["[2 đến 4 tuần]", "[3+ tháng]", "[8 đến 12 tuần]"] },
-      { "label": "Đội ngũ", "values": ["[1 đến 2 partner]", "[Partner chính + hỗ trợ]", "[3 partner]"] },
-      { "label": "Kết quả", "values": ["[Một quyết định]", "[Năng lực liên tục]", "[Một kết quả đã phát hành]"] }
+      {
+        "label": "Chỉ từ",
+        "values": [
+          "[Giá]",
+          "[Giá / tháng]",
+          "[Giá]",
+          "[Giá / tháng]"
+        ]
+      },
+      {
+        "label": "Thời lượng",
+        "values": [
+          "[2 đến 4 tuần]",
+          "[3+ tháng]",
+          "[8 đến 12 tuần]",
+          "[6+ tháng]"
+        ]
+      },
+      {
+        "label": "Đội ngũ",
+        "values": [
+          "[1 đến 2 partner]",
+          "[Partner chính + hỗ trợ]",
+          "[3 partner]",
+          "[Partner chính + hỗ trợ]"
+        ]
+      },
+      {
+        "label": "Kết quả",
+        "values": [
+          "[Một quyết định]",
+          "[Năng lực liên tục]",
+          "[Một kết quả đã phát hành]",
+          "[Vận hành ổn định]"
+        ]
+      }
+    ]
+  },
+  "strip": {
+    "label": "Các ngành chúng tôi đã làm việc",
+    "items": [
+      "Logistics",
+      "Bán lẻ và FMCG",
+      "Di chuyển",
+      "Thương mại điện tử",
+      "Sản xuất",
+      "Vận hành nội bộ"
+    ]
+  },
+  "statement": {
+    "before": "Viết phần mềm ngày càng nhanh và rẻ. Quyết định ",
+    "highlight": "nên xây gì",
+    "after": ", và làm cho người dùng thực sự dùng nó, vẫn cần phán đoán. Phán đoán đó chính là công việc của chúng tôi.",
+    "stats": [
+      {
+        "value": "100,000+",
+        "label": "cửa hàng được đưa lên một nền tảng đặt hàng B2B"
+      },
+      {
+        "value": "4+",
+        "label": "quốc gia triển khai trên một sản phẩm lõi"
+      },
+      {
+        "value": "15",
+        "label": "năm làm product và delivery, ở vị trí dẫn dắt"
+      }
+    ]
+  },
+  "lifecycle": {
+    "eyebrow": "Chúng tôi làm gì",
+    "title": "Một đội đồng hành *suốt* vòng đời sản phẩm",
+    "lead": "Mua một pha hoặc cả bốn. Mỗi pha kết thúc bằng một quyết định đã chốt, một thiết kế đã duyệt, một bản phát hành đang chạy hoặc một chỉ số đang cải thiện.",
+    "phases": [
+      {
+        "n": "01",
+        "title": "Tư vấn",
+        "tagline": "Quyết định điều gì đáng xây.",
+        "items": [
+          "Khám phá và chiến lược sản phẩm",
+          "Business case và lộ trình",
+          "Đánh giá xây hay mua và nhà cung cấp",
+          "Rà soát mức sẵn sàng data và AI"
+        ]
+      },
+      {
+        "n": "02",
+        "title": "Thiết kế",
+        "tagline": "Tạo ra thứ người dùng sẽ dùng.",
+        "items": [
+          "Thiết kế quy trình và dịch vụ",
+          "Thiết kế UX và UI",
+          "Prototype có thể thao tác",
+          "Design system"
+        ]
+      },
+      {
+        "n": "03",
+        "title": "Xây dựng",
+        "tagline": "Phát hành từng phần nhỏ, có người chịu trách nhiệm.",
+        "items": [
+          "Triển khai MVP và nền tảng",
+          "Ứng dụng web và mobile",
+          "Tích hợp ERP, TMS, WMS và dữ liệu",
+          "QA, UAT và sẵn sàng phát hành"
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Vận hành",
+        "tagline": "Ở lại đến khi con số thay đổi.",
+        "items": [
+          "Triển khai, đào tạo và quản trị thay đổi",
+          "Hỗ trợ vận hành và giám sát",
+          "Dashboard KPI và quản trị",
+          "Rà soát cải tiến hằng tháng"
+        ]
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": "Cách làm việc",
+    "title": "Bốn nguyên tắc mọi dự án *đều theo*",
+    "items": [
+      {
+        "title": "Quyết định trước khi viết code",
+        "body": "Phạm vi, KPI và các đánh đổi được thống nhất bằng văn bản trước sprint đầu tiên, để không có gì được xây trên một câu hỏi còn bỏ ngỏ."
+      },
+      {
+        "title": "Chỉ người senior",
+        "body": "Ba partner trực tiếp làm dự án của bạn. Không giao lại cho người mới."
+      },
+      {
+        "title": "Phần nhỏ, người phụ trách rõ",
+        "body": "Mỗi bản phát hành có một người phụ trách và một kết quả đo được."
+      },
+      {
+        "title": "Ở lại đến khi áp dụng",
+        "body": "Đào tạo, hỗ trợ và đo lường tiếp tục sau khi ra mắt, cho đến khi sản phẩm được dùng hằng ngày."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Tiếng nói khách hàng",
+    "title": "Khách hàng nói gì về *việc làm cùng chúng tôi*",
+    "regionLabel": "Nhận xét của khách hàng, cuộn ngang để xem thêm",
+    "items": [
+      {
+        "quote": "[Lời khách hàng: một quyết định được đưa ra nhanh hơn hoặc một kết quả kèm con số.]",
+        "name": "[Tên khách hàng]",
+        "role": "[Chức danh], [công ty đã ẩn danh]",
+        "initials": "KH"
+      },
+      {
+        "quote": "[Lời khách hàng: cách đội làm việc với nhân sự và nhà cung cấp của họ.]",
+        "name": "[Tên khách hàng]",
+        "role": "[Chức danh], [công ty đã ẩn danh]",
+        "initials": "KH"
+      },
+      {
+        "quote": "[Lời khách hàng: điều gì thay đổi sau khi ra mắt.]",
+        "name": "[Tên khách hàng]",
+        "role": "[Chức danh], [công ty đã ẩn danh]",
+        "initials": "KH"
+      }
+    ]
+  },
+  "questions": {
+    "eyebrow": "Những câu hỏi chúng tôi giúp trả lời",
+    "title": "Những câu hỏi đứng sau phần lớn *dự án*",
+    "lead": "Cuộc gọi đầu tiên thường bắt đầu từ một trong các câu này. Hãy mang câu hỏi của bạn đến.",
+    "cta": "Đặt câu hỏi cho chúng tôi",
+    "pairs": [
+      {
+        "q": "Nên tự xây hay mua một nền tảng có sẵn?",
+        "a": "Câu trả lời thường nằm ở ba con số: quy trình hiện tốn bao nhiêu, nền tảng tốn bao nhiêu trong ba năm, và quy trình của bạn thực sự khác chuẩn đến đâu. Một discovery sprint đưa ra con số cho cả ba trước khi ký bất kỳ hợp đồng nào."
+      },
+      {
+        "q": "Pilot chạy tốt, nhưng sao không ai dùng?",
+        "a": "Pilot bị dừng thường thiếu người phụ trách và kế hoạch triển khai, không phải thiếu tính năng. Bước đầu là chỉ ra ai phải thay đổi điều gì, đặt một chỉ số áp dụng, và hỗ trợ những tuần sử dụng đầu tiên."
+      },
+      {
+        "q": "Dữ liệu và KPI của chúng tôi đã sẵn sàng cho AI chưa?",
+        "a": "Chưa, nếu hai người còn đưa ra hai đáp án cho cùng một KPI. Định nghĩa và người sở hữu đến trước, rồi đến chất lượng dữ liệu, sau đó mới đến bài toán AI."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Câu hỏi thường gặp",
+    "title": "Những điều các đội hỏi trước khi *thuê chúng tôi*",
+    "items": [
+      {
+        "q": "Các bạn chỉ tư vấn hay cũng trực tiếp xây dựng?",
+        "a": "Cả hai. Tư vấn, thiết kế, xây dựng và hỗ trợ vận hành có thể mua riêng hoặc gộp thành một gói. [Mô tả mô hình kỹ thuật: nội bộ hay đối tác được thẩm định.]"
+      },
+      {
+        "q": "Các bạn làm việc thế nào với đội và nhà cung cấp của chúng tôi?",
+        "a": "Chúng tôi tham gia cuộc họp và công cụ của bạn, dùng một backlog chung và chỉ định một người phụ trách mỗi bản phát hành. Nếu bạn đã có nhà cung cấp, chúng tôi đánh giá mức phù hợp và quản lý các điểm bàn giao thay vì mặc định thay thế họ."
+      },
+      {
+        "q": "Điều gì xảy ra sau khi ra mắt?",
+        "a": "Gói vận hành và hỗ trợ gồm triển khai, đào tạo, giám sát và rà soát cải tiến hằng tháng, tính theo phí hằng tháng. Lần rà soát đầu tiên chốt các con số mà hai bên cùng theo dõi."
+      },
+      {
+        "q": "Một discovery sprint kéo dài bao lâu?",
+        "a": "Hai đến bốn tuần. Kết thúc bằng kế hoạch đã xác định phạm vi, phân tích xây hay mua và prototype có thể thao tác."
+      },
+      {
+        "q": "Các bạn có làm việc bằng cả tiếng Việt và tiếng Anh không?",
+        "a": "Có. Workshop, tài liệu và bàn giao đều có cả hai ngôn ngữ. Tiếng Anh là bản gốc cho các tài liệu viết."
+      },
+      {
+        "q": "Chi phí được tính như thế nào?",
+        "a": "Mỗi hình thức hợp tác có mức giá khởi điểm trên trang chi phí. Phạm vi công việc quyết định con số cuối cùng và được thống nhất trước khi bắt đầu."
+      }
     ]
   }
 }

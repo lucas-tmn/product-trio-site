@@ -4,7 +4,7 @@ Static landing page / portfolio for a three-person senior product team. Astro, E
 
 ## Structure
 - `src/styles/tokens/*.css`, `src/styles/components.css`: design-system files, copied as delivered (`fonts.css` replaces the Google Fonts import with self-hosted Fontsource fonts).
-- `src/styles/layout.css`: page-level glue using tokens only.
+- `src/styles/layout.css`, `src/styles/sections.css`: page-level layout and the newer section patterns (highlight pill, rounded statement panel, phases, bento, quotes, chat Q&A, FAQ), tokens only. These patterns are candidates to add to the design system.
 - `src/components/{core,sections,cards}/*.astro`: components using the `.ds-*` classes.
 - `src/content/en.json`, `vi.json`: all copy, same keys. EN is the source. `[bracketed]` text is a placeholder.
 - `src/pages/[lang]/`: home, `work/example-case`, `insights/example-article`, `pricing` for `/en/` and `/vi/`.

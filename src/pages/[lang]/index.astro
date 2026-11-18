@@ -4,13 +4,14 @@ import Chip from '../../components/core/Chip.astro';
 import Field from '../../components/core/Field.astro';
 import Button from '../../components/core/Button.astro';
 import SectionHeader from '../../components/sections/SectionHeader.astro';
-import MetricTile from '../../components/sections/MetricTile.astro';
-import ProblemItem from '../../components/sections/ProblemItem.astro';
-import ProcessStep from '../../components/sections/ProcessStep.astro';
-import Callout from '../../components/sections/Callout.astro';
 import CtaBand from '../../components/sections/CtaBand.astro';
-import Deliverable from '../../components/sections/Deliverable.astro';
-import ServiceCard from '../../components/cards/ServiceCard.astro';
+import StatementPanel from '../../components/sections/StatementPanel.astro';
+import IndustryStrip from '../../components/sections/IndustryStrip.astro';
+import PhaseCard from '../../components/sections/PhaseCard.astro';
+import PrincipleCard from '../../components/sections/PrincipleCard.astro';
+import TestimonialCard from '../../components/sections/TestimonialCard.astro';
+import ChatPair from '../../components/sections/ChatPair.astro';
+import FaqItem from '../../components/sections/FaqItem.astro';
 import CaseCard from '../../components/cards/CaseCard.astro';
 import EngagementCard from '../../components/cards/EngagementCard.astro';
 import TeamCard from '../../components/cards/TeamCard.astro';
@@ -19,60 +20,54 @@ import { getContent, path, fill, staticLangPaths, type Lang } from '../../i18n/u
 export const getStaticPaths = staticLangPaths;
 const lang = Astro.params.lang as Lang;
 const t = getContent(lang);
-const pad = (i: number) => String(i + 1).padStart(2, '0');
 const total = t.work.cases.length;
+const pad = (i: number) => String(i + 1).padStart(2, '0');
 ---
 <Base lang={lang}>
-  <section class="ds-section section--hero" data-band="indigo">
+  <!-- Hero (light) -->
+  <section class="hero-light">
     <div class="ds-container">
-      <div class="hero">
-        <div class="stack">
-          <span class="ds-eyebrow hero__eyebrow">{t.hero.eyebrow}</span>
-          <h1 class="ds-display">{t.hero.title}</h1>
-          <p class="ds-body-l lead-measure">{t.hero.lead}</p>
-          <div class="row">
-            <Button variant="on-dark" href="#contact">{t.hero.primary}</Button>
-            <Button variant="ghost-dark" href="#work">{t.hero.secondary}</Button>
-          </div>
-        </div>
-        <Deliverable tag={t.labels.anonymized} placeholder={t.hero.visual} />
+      <span class="ds-eyebrow">{t.hero.eyebrow}</span>
+      <h1 class="ds-display mt-3">{t.hero.before}<mark class="hl">{t.hero.highlight}</mark>{' '}{t.hero.after}</h1>
+      <p class="ds-body-l">{t.hero.lead}</p>
+      <div class="row">
+        <Button variant="primary" href="#contact">{t.hero.primary}</Button>
+        <Button variant="secondary" href="#work">{t.hero.secondary}</Button>
       </div>
-      <div class="ds-proof proof-gap">
-        {t.proof.map((p) => <MetricTile value={p.value} label={p.label} />)}
-      </div>
+      <IndustryStrip label={t.strip.label} items={t.strip.items} />
     </div>
   </section>
 
-  <section class="ds-section" aria-labelledby="problem-h">
+  <!-- Statement panel -->
+  <section class="ds-section section--flush-top">
     <div class="ds-container">
-      <SectionHeader eyebrow={t.problem.eyebrow} title={t.problem.title} id="problem-h" />
-      <div class="ds-grid-3">
-        {t.problem.items.map((i, k) => <ProblemItem n={pad(k)} title={i.title} body={i.body} />)}
-      </div>
+      <StatementPanel before={t.statement.before} highlight={t.statement.highlight} after={t.statement.after} stats={t.statement.stats} />
     </div>
   </section>
 
+  <!-- Lifecycle: consult, design, build, run -->
   <section class="ds-section section--surface" id="services" aria-labelledby="services-h">
     <div class="ds-container">
-      <SectionHeader eyebrow={t.services.eyebrow} title={t.services.title} lead={t.services.lead} id="services-h" />
-      <div class="ds-grid-3">
-        {t.services.items.map((s) => <ServiceCard title={s.title} body={s.body} tags={s.tags} />)}
+      <SectionHeader eyebrow={t.lifecycle.eyebrow} title={t.lifecycle.title} lead={t.lifecycle.lead} id="services-h" />
+      <div class="phases">
+        {t.lifecycle.phases.map((p) => <PhaseCard n={p.n} title={p.title} tagline={p.tagline} items={p.items} />)}
       </div>
     </div>
   </section>
 
+  <!-- Principles (bento) -->
   <section class="ds-section" id="approach" aria-labelledby="approach-h">
     <div class="ds-container">
-      <SectionHeader eyebrow={t.approach.eyebrow} title={t.approach.title} id="approach-h" />
-      <div class="steps">
-        {t.approach.steps.map((s, k) => <ProcessStep n={pad(k)} title={s.title} body={s.body} />)}
-      </div>
-      <div class="callout-gap">
-        <Callout eyebrow={t.approach.callout.eyebrow} title={t.approach.callout.title} body={t.approach.callout.body} />
+      <SectionHeader eyebrow={t.principles.eyebrow} title={t.principles.title} id="approach-h" />
+      <div class="bento">
+        {t.principles.items.map((p, k) => (
+          <PrincipleCard n={pad(k)} title={p.title} body={p.body} variant={(k + 1) as 1 | 2 | 3 | 4} />
+        ))}
       </div>
     </div>
   </section>
 
+  <!-- Selected work -->
   <section class="ds-section" id="work" data-band="indigo-2" aria-labelledby="work-h">
     <div class="ds-container">
       <SectionHeader eyebrow={t.work.eyebrow} title={t.work.title} id="work-h" />
@@ -86,6 +81,7 @@ const total = t.work.cases.length;
         {t.work.cases.map((c) => (
           <CaseCard
             industry={c.industry} title={c.title} metric={c.metric} metricLabel={c.metricLabel} owner={c.owner}
+            visual={t.labels.visualPlaceholder} tags={c.tags}
             href={c.link ? path(lang, t.case.path) : undefined} data-type={c.type}
           />
         ))}
@@ -93,10 +89,21 @@ const total = t.work.cases.length;
     </div>
   </section>
 
-  <section class="ds-section" id="engagement" aria-labelledby="engagement-h">
+  <!-- Testimonials -->
+  <section class="ds-section" aria-labelledby="voices-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.testimonials.eyebrow} title={t.testimonials.title} id="voices-h" />
+      <div class="quotes" role="region" aria-label={t.testimonials.regionLabel} tabindex="0">
+        {t.testimonials.items.map((q) => <TestimonialCard quote={q.quote} name={q.name} role={q.role} initials={q.initials} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement models -->
+  <section class="ds-section section--surface" id="engagement" aria-labelledby="engagement-h">
     <div class="ds-container">
       <SectionHeader eyebrow={t.engagement.eyebrow} title={t.engagement.title} id="engagement-h" />
-      <div class="ds-grid-3">
+      <div class="grid-4">
         {t.engagement.items.map((e) => (
           <EngagementCard
             name={e.name} summary={e.summary} from={e.from} items={e.items} cta={e.cta}
@@ -108,6 +115,32 @@ const total = t.work.cases.length;
     </div>
   </section>
 
+  <!-- Questions we help answer -->
+  <section class="ds-section chat-section" aria-labelledby="questions-h">
+    <div class="ds-container">
+      <div class="chat-grid">
+        <div class="stack">
+          <SectionHeader eyebrow={t.questions.eyebrow} title={t.questions.title} lead={t.questions.lead} id="questions-h" />
+          <div><Button variant="primary" href="#contact">{t.questions.cta}</Button></div>
+        </div>
+        <div class="chat">
+          {t.questions.pairs.map((p) => <ChatPair q={p.q} a={p.a} youLabel={t.labels.you} teamLabel={t.labels.team} />)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="ds-section" data-band="indigo" aria-labelledby="faq-h">
+    <div class="ds-container">
+      <div class="center faq-head"><SectionHeader eyebrow={t.faq.eyebrow} title={t.faq.title} id="faq-h" /></div>
+      <div class="faq-grid">
+        {t.faq.items.map((f) => <FaqItem q={f.q} a={f.a} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
   <section class="ds-section section--surface" id="team" aria-labelledby="team-h">
     <div class="ds-container">
       <SectionHeader eyebrow={t.team.eyebrow} title={t.team.title} id="team-h" />
@@ -123,6 +156,7 @@ const total = t.work.cases.length;
     </div>
   </section>
 
+  <!-- Contact -->
   <section class="ds-section" id="contact" aria-labelledby="contact-h">
     <div class="ds-container">
       <div class="split">

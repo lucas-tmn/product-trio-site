@@ -1,0 +1,10 @@
+---
+interface Props { before: string; highlight: string; after: string; stats: { value: string; label: string }[]; }
+const { before, highlight, after, stats } = Astro.props;
+---
+<div class="panel" data-band="indigo">
+  <p class="panel__text">{before}<mark class="hl-text">{highlight}</mark>{after}</p>
+  <div class="panel__stats">
+    {stats.map((s) => <div class="ds-stat"><span class="ds-metric">{s.value}</span><span class="ds-stat__label">{s.label}</span></div>)}
+  </div>
+</div>

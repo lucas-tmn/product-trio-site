@@ -3,8 +3,20 @@
     "title": "[Team Name] · Product strategy, delivery and data/AI",
     "description": "A three-person senior team from Vietnam. Product strategy, delivery and data/AI readiness for companies in Vietnam and abroad."
   },
-  "a11y": { "skip": "Skip to content", "primaryNav": "Primary", "language": "Language", "menu": "Menu", "close": "Close" },
-  "nav": { "services": "Services", "work": "Work", "pricing": "Pricing", "team": "Team", "contact": "Contact" },
+  "a11y": {
+    "skip": "Skip to content",
+    "primaryNav": "Primary",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "pricing": "Pricing",
+    "team": "Team",
+    "contact": "Contact"
+  },
   "labels": {
     "anonymized": "Anonymized",
     "startingFrom": "Starting from",
@@ -14,86 +26,189 @@
     "portraitAlt": "Portrait of",
     "bookCall": "Book a call",
     "seeWork": "See work",
-    "backHome": "Back to home"
+    "backHome": "Back to home",
+    "letsTalk": "Let's talk",
+    "askUs": "Ask us your question",
+    "you": "You",
+    "team": "Team",
+    "visualPlaceholder": "[blurred project visual]"
   },
   "hero": {
-    "eyebrow": "Product strategy · Delivery · Data & AI",
-    "title": "From zero to scalable. Senior product, delivery and data/AI, without the agency bloat.",
-    "lead": "A three-person senior team from Vietnam. We take products and operations from discovery to adoption, across industries.",
+    "eyebrow": "Strategy · Design · Delivery · Operations support",
+    "before": "",
+    "highlight": "One senior team",
+    "after": "from first idea to daily operations.",
+    "lead": "Product strategy, design, delivery and operations support for companies in Vietnam and abroad. We stay until the product is in daily use and the numbers move.",
     "primary": "Book a 30-minute call",
-    "secondary": "See selected work",
-    "visual": "[blurred architecture diagram or wireframe]"
+    "secondary": "See selected work"
   },
   "proof": [
-    { "value": "100,000+", "label": "stores onboarded to one B2B ordering platform" },
-    { "value": "4+", "label": "countries launched on one core product" },
-    { "value": "3", "label": "senior people on every project" }
-  ],
-  "problem": {
-    "eyebrow": "The problem",
-    "title": "Most digital products fail on strategy, not code.",
-    "items": [
-      { "title": "Misaligned goals", "body": "Business, operations and technology each optimise for a different result." },
-      { "title": "Hiring too early", "body": "A full-time product leader is hired before the problem is defined." },
-      { "title": "Pilots that stall", "body": "A good demo, but no adoption plan and no owner after launch." }
-    ]
-  },
-  "services": {
-    "eyebrow": "Services",
-    "title": "Six services, one senior team",
-    "lead": "Each service ends with a decision made or a system in use, not a slide deck.",
-    "items": [
-      { "title": "0→1 product discovery", "body": "Strategy, MVP scope, business case and build-or-buy evaluation, so the first release answers the right question.", "tags": ["Strategy", "MVP", "Build or buy"] },
-      { "title": "Delivery and rollout", "body": "Agile delivery, UAT, release readiness and change management until people actually use the product.", "tags": ["Agile", "UAT", "Adoption"] },
-      { "title": "Process digitalization", "body": "Paper, spreadsheets and legacy tools replaced by systems that operations teams choose to use.", "tags": ["Legacy", "Operations", "Integration"] },
-      { "title": "Data and AI readiness", "body": "KPI definitions, data governance and semantic models, so AI works on numbers the business trusts.", "tags": ["KPI", "Governance", "AI"] },
-      { "title": "Fractional product leadership", "body": "A senior product lead embedded in your team, without a full-time hire.", "tags": ["Retainer", "Roadmap"] },
-      { "title": "Vendor evaluation", "body": "Fit, cost, scalability, integration effort and security assessed before a contract is signed.", "tags": ["Selection", "Contracts"] }
-    ]
-  },
-  "approach": {
-    "eyebrow": "Approach",
-    "title": "Four steps from question to adopted product",
-    "steps": [
-      { "title": "Discover", "body": "Map workflows and decision points. Find the real problem." },
-      { "title": "Define", "body": "Agree scope, KPIs and trade-offs before anything is built." },
-      { "title": "Deliver", "body": "Ship in small slices, each with a named owner." },
-      { "title": "Adopt", "body": "Train, measure and iterate until the numbers move." }
-    ],
-    "callout": {
-      "eyebrow": "Built to scale",
-      "title": "Need more than three people? Partners are screened before they join.",
-      "body": "Engineering and design partners are assessed on fit, cost, scalability and security by the people who will run your project."
+    {
+      "value": "100,000+",
+      "label": "stores onboarded to one B2B ordering platform"
+    },
+    {
+      "value": "4+",
+      "label": "countries launched on one core product"
+    },
+    {
+      "value": "3",
+      "label": "senior people on every project"
     }
-  },
+  ],
   "work": {
     "eyebrow": "Selected work",
-    "title": "Selected work, with the numbers",
+    "title": "Selected work, with the *numbers*",
     "filterLabel": "Filter by service",
     "countTemplate": "Showing {n} of {total} projects",
     "filters": [
-      { "id": "all", "label": "All" },
-      { "id": "mvp", "label": "0→1 MVP" },
-      { "id": "rollout", "label": "Scale and rollout" },
-      { "id": "digitalization", "label": "Process digitalization" },
-      { "id": "data", "label": "Data readiness" }
+      {
+        "id": "all",
+        "label": "All"
+      },
+      {
+        "id": "mvp",
+        "label": "0→1 MVP"
+      },
+      {
+        "id": "rollout",
+        "label": "Scale and rollout"
+      },
+      {
+        "id": "digitalization",
+        "label": "Process digitalization"
+      },
+      {
+        "id": "data",
+        "label": "Data readiness"
+      }
     ],
     "cases": [
-      { "type": "mvp", "industry": "Retail · B2B", "title": "B2B ordering platform for neighbourhood grocery stores", "metric": "100,000+", "metricLabel": "stores onboarded to online ordering", "owner": "Led by Lucas Trịnh, product", "link": true },
-      { "type": "rollout", "industry": "Mobility · Multi-market", "title": "Driver and fleet operations platform launched in four+ countries", "metric": "4+", "metricLabel": "countries on one core product, configured per local labour rules", "owner": "Led by Lucas Trịnh, product" },
-      { "type": "digitalization", "industry": "Logistics", "title": "End-to-end transport visibility for B2B customers and carriers", "metric": "100%", "metricLabel": "of the Vietnam rollout target achieved", "owner": "Led by Lucas Trịnh, product" },
-      { "type": "data", "industry": "Supply chain · Manufacturing", "title": "Shared KPI definitions and a control tower for planning decisions", "metric": "[metric]", "metricLabel": "[result in one line]", "owner": "Led by Lucas Trịnh, product" },
-      { "type": "mvp", "industry": "[Industry]", "title": "[Anonymized client and project]", "metric": "[metric]", "metricLabel": "[result in one line]", "owner": "Led by [Luận], product strategy" },
-      { "type": "rollout", "industry": "[Industry]", "title": "[Anonymized client and project]", "metric": "[metric]", "metricLabel": "[result in one line]", "owner": "Led by Dương Tăng, delivery" }
+      {
+        "type": "mvp",
+        "industry": "Retail · B2B",
+        "title": "B2B ordering platform for neighbourhood grocery stores",
+        "metric": "100,000+",
+        "metricLabel": "stores onboarded to online ordering",
+        "owner": "Led by Lucas Trịnh, product",
+        "link": true,
+        "tags": [
+          "Discovery",
+          "Build",
+          "Run"
+        ]
+      },
+      {
+        "type": "rollout",
+        "industry": "Mobility · Multi-market",
+        "title": "Driver and fleet operations platform launched in four+ countries",
+        "metric": "4+",
+        "metricLabel": "countries on one core product, configured per local labour rules",
+        "owner": "Led by Lucas Trịnh, product",
+        "tags": [
+          "Build",
+          "Rollout"
+        ]
+      },
+      {
+        "type": "digitalization",
+        "industry": "Logistics",
+        "title": "End-to-end transport visibility for B2B customers and carriers",
+        "metric": "100%",
+        "metricLabel": "of the Vietnam rollout target achieved",
+        "owner": "Led by Lucas Trịnh, product",
+        "tags": [
+          "Rollout",
+          "Run"
+        ]
+      },
+      {
+        "type": "data",
+        "industry": "Supply chain · Manufacturing",
+        "title": "Shared KPI definitions and a control tower for planning decisions",
+        "metric": "[metric]",
+        "metricLabel": "[result in one line]",
+        "owner": "Led by Lucas Trịnh, product",
+        "tags": [
+          "Consult",
+          "Data"
+        ]
+      },
+      {
+        "type": "mvp",
+        "industry": "[Industry]",
+        "title": "[Anonymized client and project]",
+        "metric": "[metric]",
+        "metricLabel": "[result in one line]",
+        "owner": "Led by [Luận], product strategy",
+        "tags": [
+          "[Tag]",
+          "[Tag]"
+        ]
+      },
+      {
+        "type": "rollout",
+        "industry": "[Industry]",
+        "title": "[Anonymized client and project]",
+        "metric": "[metric]",
+        "metricLabel": "[result in one line]",
+        "owner": "Led by Dương Tăng, delivery",
+        "tags": [
+          "[Tag]",
+          "[Tag]"
+        ]
+      }
     ]
   },
   "engagement": {
     "eyebrow": "Engagement models",
-    "title": "Pick the shape that fits the question",
+    "title": "Pick the shape that fits the *question*",
     "items": [
-      { "name": "Discovery sprint", "summary": "2 to 4 weeks, one decision made.", "from": "[Price]", "items": ["Blueprint and scope", "Build-or-buy analysis", "Clickable prototype"], "cta": "Discuss a sprint", "featured": true },
-      { "name": "Embedded squad", "summary": "Monthly retainer, working inside your team.", "from": "[Price / month]", "items": ["Product, delivery and data leads", "Weekly roadmap review"], "cta": "Discuss a retainer", "featured": false },
-      { "name": "End-to-end delivery", "summary": "Milestone-based, from scoped MVP to stable operation.", "from": "[Price]", "items": ["Fixed milestones and owners", "Vetted partners where needed"], "cta": "Discuss delivery", "featured": false }
+      {
+        "name": "Discovery sprint",
+        "summary": "2 to 4 weeks, one decision made.",
+        "from": "[Price]",
+        "items": [
+          "Blueprint and scope",
+          "Build-or-buy analysis",
+          "Clickable prototype"
+        ],
+        "cta": "Discuss a sprint",
+        "featured": true
+      },
+      {
+        "name": "Embedded squad",
+        "summary": "Monthly retainer, working inside your team.",
+        "from": "[Price / month]",
+        "items": [
+          "Product, delivery and data leads",
+          "Weekly roadmap review"
+        ],
+        "cta": "Discuss a squad",
+        "featured": false
+      },
+      {
+        "name": "End-to-end delivery",
+        "summary": "Milestone-based, from scoped MVP to stable operation.",
+        "from": "[Price]",
+        "items": [
+          "Fixed milestones and owners",
+          "Vetted partners where needed"
+        ],
+        "cta": "Discuss delivery",
+        "featured": false
+      },
+      {
+        "name": "Run and support",
+        "summary": "Monthly retainer after launch.",
+        "from": "[Price / month]",
+        "items": [
+          "Rollout and training",
+          "Monitoring and monthly review"
+        ],
+        "cta": "Discuss support",
+        "featured": false
+      }
     ]
   },
   "team": {
@@ -101,9 +216,24 @@
     "title": "Three senior people on every project",
     "note": "You work directly with the three of us. No junior hand-offs.",
     "members": [
-      { "name": "Lucas Trịnh", "role": "Product strategy · Supply chain and data", "bio": "15 years in logistics, retail and mobility. Launched a driver platform in four+ countries and a B2B platform for 100,000+ stores.", "linkedin": "https://linkedin.com/in/mnhut-trinh" },
-      { "name": "Luận [Surname]", "role": "Head of Product", "bio": "[Two-line bio: years, sectors, one result with a number.]", "linkedin": "" },
-      { "name": "Dương Tăng", "role": "Delivery", "bio": "[Two-line bio: years, sectors, one result with a number.]", "linkedin": "" }
+      {
+        "name": "Lucas Trịnh",
+        "role": "Product strategy · Supply chain and data",
+        "bio": "15 years in logistics, retail and mobility. Launched a driver platform in four+ countries and a B2B platform for 100,000+ stores.",
+        "linkedin": "https://linkedin.com/in/mnhut-trinh"
+      },
+      {
+        "name": "Luận [Surname]",
+        "role": "Head of Product",
+        "bio": "[Two-line bio: years, sectors, one result with a number.]",
+        "linkedin": ""
+      },
+      {
+        "name": "Dương Tăng",
+        "role": "Delivery",
+        "bio": "[Two-line bio: years, sectors, one result with a number.]",
+        "linkedin": ""
+      }
     ]
   },
   "contact": {
@@ -118,7 +248,12 @@
       "emailError": "Enter an email like name@company.com",
       "nameError": "Enter your name",
       "need": "What do you need?",
-      "needOptions": ["Product strategy", "Delivery", "Data and AI readiness", "Not sure yet"],
+      "needOptions": [
+        "Product strategy",
+        "Delivery",
+        "Data and AI readiness",
+        "Not sure yet"
+      ],
       "context": "Context",
       "contextPlaceholder": "[Two sentences on the situation]",
       "send": "Send message",
@@ -126,7 +261,9 @@
       "subject": "Enquiry from the website"
     }
   },
-  "cta": { "title": "Have a product to build, fix or scale?" },
+  "cta": {
+    "title": "Have a product to build, fix or scale?"
+  },
   "footer": {
     "tagline": "Senior product, delivery and data/AI team based in Ho Chi Minh City.",
     "site": "Site",
@@ -140,21 +277,62 @@
     "title": "[Top-3 logistics provider in Vietnam]: [outcome in one line]",
     "lead": "[Situation in one sentence: who, what was at stake.]",
     "proof": [
-      { "value": "−31%", "label": "[primary result]" },
-      { "value": "5 mo", "label": "[time to result]" },
-      { "value": "3", "label": "[team roles on the project]" }
+      {
+        "value": "−31%",
+        "label": "[primary result]"
+      },
+      {
+        "value": "5 mo",
+        "label": "[time to result]"
+      },
+      {
+        "value": "3",
+        "label": "[team roles on the project]"
+      }
     ],
-    "meta": { "industry": "Industry", "scope": "Scope", "duration": "Duration", "industryValue": "[Industry]", "scopeValue": "[Scope]", "durationValue": "[Duration]" },
+    "meta": {
+      "industry": "Industry",
+      "scope": "Scope",
+      "duration": "Duration",
+      "industryValue": "[Industry]",
+      "scopeValue": "[Scope]",
+      "durationValue": "[Duration]"
+    },
     "sections": [
-      { "eyebrow": "Context", "title": "Situation", "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]" },
-      { "eyebrow": "Challenge", "title": "Complication", "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]" },
-      { "eyebrow": "Decisions", "title": "Key decisions and trade-offs", "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]" },
-      { "eyebrow": "Results", "title": "Results", "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]" }
+      {
+        "eyebrow": "Context",
+        "title": "Situation",
+        "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]"
+      },
+      {
+        "eyebrow": "Challenge",
+        "title": "Complication",
+        "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]"
+      },
+      {
+        "eyebrow": "Decisions",
+        "title": "Key decisions and trade-offs",
+        "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]"
+      },
+      {
+        "eyebrow": "Results",
+        "title": "Results",
+        "body": "[Two to four sentences. Each claim has a number, a role or a decision. Name the option rejected and why.]"
+      }
     ],
     "deliverables": [
-      { "placeholder": "[wireframe]", "caption": "Wireframe, details blurred" },
-      { "placeholder": "[architecture diagram]", "caption": "Architecture diagram, details blurred" },
-      { "placeholder": "[roadmap]", "caption": "Roadmap, details blurred" }
+      {
+        "placeholder": "[wireframe]",
+        "caption": "Wireframe, details blurred"
+      },
+      {
+        "placeholder": "[architecture diagram]",
+        "caption": "Architecture diagram, details blurred"
+      },
+      {
+        "placeholder": "[roadmap]",
+        "caption": "Roadmap, details blurred"
+      }
     ],
     "ctaTitle": "Facing a similar decision?"
   },
@@ -177,12 +355,227 @@
     "eyebrow": "Engagement models",
     "title": "[Starting from, by engagement shape]",
     "lead": "[Prices are starting points; scope sets the final figure.]",
-    "columns": ["Discovery sprint", "Embedded squad", "End-to-end delivery"],
+    "columns": [
+      "Discovery sprint",
+      "Embedded squad",
+      "End-to-end delivery",
+      "Run and support"
+    ],
     "rows": [
-      { "label": "Starting from", "values": ["[Price]", "[Price / month]", "[Price]"] },
-      { "label": "Duration", "values": ["[2 to 4 weeks]", "[3+ months]", "[8 to 12 weeks]"] },
-      { "label": "Team", "values": ["[1 to 2 partners]", "[Named partner + support]", "[3 partners]"] },
-      { "label": "Outcome", "values": ["[One decision]", "[Ongoing capacity]", "[One shipped outcome]"] }
+      {
+        "label": "Starting from",
+        "values": [
+          "[Price]",
+          "[Price / month]",
+          "[Price]",
+          "[Price / month]"
+        ]
+      },
+      {
+        "label": "Duration",
+        "values": [
+          "[2 to 4 weeks]",
+          "[3+ months]",
+          "[8 to 12 weeks]",
+          "[6+ months]"
+        ]
+      },
+      {
+        "label": "Team",
+        "values": [
+          "[1 to 2 partners]",
+          "[Named partner + support]",
+          "[3 partners]",
+          "[Named partner + support]"
+        ]
+      },
+      {
+        "label": "Outcome",
+        "values": [
+          "[One decision]",
+          "[Ongoing capacity]",
+          "[One shipped outcome]",
+          "[Stable operation]"
+        ]
+      }
+    ]
+  },
+  "strip": {
+    "label": "Industries we have worked in",
+    "items": [
+      "Logistics",
+      "Retail and FMCG",
+      "Mobility",
+      "E-commerce",
+      "Manufacturing",
+      "Internal operations"
+    ]
+  },
+  "statement": {
+    "before": "Writing software keeps getting faster and cheaper. Deciding ",
+    "highlight": "what to build",
+    "after": ", and getting people to use it, still takes judgment. That judgment is the work we do.",
+    "stats": [
+      {
+        "value": "100,000+",
+        "label": "stores onboarded to one B2B ordering platform"
+      },
+      {
+        "value": "4+",
+        "label": "countries launched on one core product"
+      },
+      {
+        "value": "15",
+        "label": "years in product and delivery, in the lead seat"
+      }
+    ]
+  },
+  "lifecycle": {
+    "eyebrow": "What we do",
+    "title": "One team across the *whole* product lifecycle",
+    "lead": "Buy one phase or all four. Each phase ends with a decision made, a design approved, a release live or a metric moving.",
+    "phases": [
+      {
+        "n": "01",
+        "title": "Consult",
+        "tagline": "Decide what is worth building.",
+        "items": [
+          "Product discovery and strategy",
+          "Business case and roadmap",
+          "Build-or-buy and vendor evaluation",
+          "Data and AI readiness review"
+        ]
+      },
+      {
+        "n": "02",
+        "title": "Design",
+        "tagline": "Shape something people will use.",
+        "items": [
+          "Workflow and service design",
+          "UX and UI design",
+          "Clickable prototypes",
+          "Design system"
+        ]
+      },
+      {
+        "n": "03",
+        "title": "Build",
+        "tagline": "Ship in small, owned slices.",
+        "items": [
+          "MVP and platform delivery",
+          "Web and mobile apps",
+          "ERP, TMS, WMS and data integration",
+          "QA, UAT and release readiness"
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Run",
+        "tagline": "Stay until the numbers move.",
+        "items": [
+          "Rollout, training and change management",
+          "Operations support and monitoring",
+          "KPI dashboards and governance",
+          "Monthly improvement review"
+        ]
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": "How we work",
+    "title": "Four rules every project *follows*",
+    "items": [
+      {
+        "title": "Decisions before code",
+        "body": "Scope, KPIs and trade-offs are agreed in writing before the first sprint, so nothing is built on an open question."
+      },
+      {
+        "title": "Senior people only",
+        "body": "The three partners work on your project. No junior hand-offs."
+      },
+      {
+        "title": "Small slices, named owners",
+        "body": "Every release has one owner and one measurable outcome."
+      },
+      {
+        "title": "We stay for adoption",
+        "body": "Training, support and measurement continue after launch until the product is in daily use."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client voices",
+    "title": "What clients say about *working with us*",
+    "regionLabel": "Client testimonials, scroll sideways",
+    "items": [
+      {
+        "quote": "[Client quote: one decision made faster or one result with a number.]",
+        "name": "[Client name]",
+        "role": "[Role], [anonymized company]",
+        "initials": "CN"
+      },
+      {
+        "quote": "[Client quote: how the team worked with their own people and vendors.]",
+        "name": "[Client name]",
+        "role": "[Role], [anonymized company]",
+        "initials": "CN"
+      },
+      {
+        "quote": "[Client quote: what changed after launch.]",
+        "name": "[Client name]",
+        "role": "[Role], [anonymized company]",
+        "initials": "CN"
+      }
+    ]
+  },
+  "questions": {
+    "eyebrow": "Questions we help answer",
+    "title": "The questions behind most *projects*",
+    "lead": "A first call usually starts with one of these. Bring yours.",
+    "cta": "Ask us your question",
+    "pairs": [
+      {
+        "q": "Should we build this ourselves or buy a platform?",
+        "a": "The answer usually sits in three numbers: what the process costs today, what a platform costs over three years, and how different your process really is. A discovery sprint puts figures on all three before any contract is signed."
+      },
+      {
+        "q": "Our pilot worked. Why is nobody using it?",
+        "a": "Stalled pilots usually lack an owner and a rollout plan, not features. The first step is to name who has to change what, set one adoption metric, and support the first weeks of use."
+      },
+      {
+        "q": "Are our data and KPIs ready for AI?",
+        "a": "Not until two people give the same answer to the same KPI. Definitions and ownership come first, then data quality, then the AI use case."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "What teams ask before they *hire us*",
+    "items": [
+      {
+        "q": "Do you only advise, or do you also build?",
+        "a": "Both. Advice, design, build and operations support can be bought separately or as one engagement. [Describe the engineering model: in-house or vetted partners.]"
+      },
+      {
+        "q": "How do you work with our own team and vendors?",
+        "a": "We join your meetings and tools, keep one shared backlog and name one owner per release. Where you already have vendors, we assess fit and manage the hand-offs instead of replacing them by default."
+      },
+      {
+        "q": "What happens after launch?",
+        "a": "Run and support covers rollout, training, monitoring and a monthly improvement review, scoped as a retainer. The first review sets the numbers we track together."
+      },
+      {
+        "q": "How long does a discovery sprint take?",
+        "a": "Two to four weeks. It ends with a scoped plan, a build-or-buy analysis and a clickable prototype."
+      },
+      {
+        "q": "Can you work in Vietnamese and English?",
+        "a": "Yes. Workshops, documents and handover are available in both languages. English is the source for written deliverables."
+      },
+      {
+        "q": "How is the work priced?",
+        "a": "Each engagement model has a starting price on the pricing page. Scope sets the final figure and is agreed before work starts."
+      }
     ]
   }
 }

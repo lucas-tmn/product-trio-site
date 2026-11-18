@@ -1,8 +1,10 @@
 /* Self-hosted fonts (replaces the Google Fonts import, see handoff.md step 2).
    Fontsource registers the families as "Plus Jakarta Sans Variable" / "Inter Variable",
    so the token stacks in typography.css are prefixed with those names here.
-   Subsets latin, latin-ext and vietnamese ship in wght.css; browsers fetch only what a page uses. */
+   Subsets latin, latin-ext and vietnamese ship in wght.css; browsers fetch only what a page uses.
+   The italic file of the heading family is used for accent words in headings (no extra family). */
 @import "@fontsource-variable/plus-jakarta-sans/wght.css";
+@import "@fontsource-variable/plus-jakarta-sans/wght-italic.css";
 @import "@fontsource-variable/inter/wght.css";
 :root {
   --font-heading: "Plus Jakarta Sans Variable", "Plus Jakarta Sans", "Inter Variable", "Inter", system-ui, sans-serif;

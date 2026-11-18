@@ -1,11 +1,17 @@
 ---
-interface Props { industry: string; title: string; metric: string; metricLabel: string; owner: string; href?: string; [key: string]: unknown; }
-const { industry, title, metric, metricLabel, owner, href, ...rest } = Astro.props;
+import Chip from '../core/Chip.astro';
+interface Props {
+  industry: string; title: string; metric: string; metricLabel: string; owner: string; href?: string;
+  visual?: string; tags?: string[]; [key: string]: unknown;
+}
+const { industry, title, metric, metricLabel, owner, href, visual, tags = [], ...rest } = Astro.props;
 const Tag = href ? 'a' : 'article';
 ---
 <Tag class="ds-card ds-card--case" href={href} {...rest}>
+  {visual && <div class="ds-ph case-visual">{visual}</div>}
   <span class="ds-eyebrow">{industry}</span>
   <h3 class="ds-h3">{title}</h3>
   <div class="ds-stat"><span class="ds-metric">{metric}</span><span class="ds-stat__label">{metricLabel}</span></div>
+  {tags.length > 0 && <div class="ds-card__tags">{tags.map((t) => <Chip label={t} />)}</div>}
   <div class="ds-card--case__owner">{owner}</div>
 </Tag>
