@@ -125,8 +125,8 @@
         "type": "data",
         "industry": "Supply chain · Manufacturing",
         "title": "Shared KPI definitions and a control tower for planning decisions",
-        "metric": "[metric]",
-        "metricLabel": "[result in one line]",
+        "metric": "-30%",
+        "metricLabel": "time spent preparing the weekly planning review",
         "owner": "Led by Lucas Trịnh, product",
         "tags": [
           "Consult",

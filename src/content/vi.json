@@ -125,8 +125,8 @@
         "type": "data",
         "industry": "Chuỗi cung ứng · Sản xuất",
         "title": "Thống nhất định nghĩa KPI và control tower phục vụ quyết định kế hoạch",
-        "metric": "[số liệu]",
-        "metricLabel": "[kết quả trong một dòng]",
+        "metric": "-30%",
+        "metricLabel": "thời gian chuẩn bị cho buổi rà soát kế hoạch hằng tuần",
         "owner": "Phụ trách: Lucas Trịnh, product",
         "tags": [
           "Tư vấn",
