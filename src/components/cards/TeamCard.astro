@@ -1,0 +1,16 @@
+---
+interface Props {
+  name: string; role: string; bio: string; photo?: string; linkedin?: string;
+  portraitAlt?: string; linkedinLabel?: string; linkedinAria?: string;
+}
+const { name, role, bio, photo, linkedin, portraitAlt = `Portrait of ${name}`, linkedinLabel = 'LinkedIn', linkedinAria = `LinkedIn profile of ${name}` } = Astro.props;
+const initials = name.replace(/[\[\]]/g, '').split(' ').map((w) => w[0]).slice(0, 2).join('');
+---
+<article class="ds-team">
+  <div class="ds-portrait">
+    {photo ? <img src={photo} alt={portraitAlt} width="480" height="600" loading="lazy" /> : <span class="ds-portrait__initials" aria-hidden="true">{initials}</span>}
+  </div>
+  <div><h3 class="ds-h4">{name}</h3><div class="ds-team__role">{role}</div></div>
+  <p class="ds-body-s secondary-text team-bio">{bio}</p>
+  {linkedin && <a class="ds-link" href={linkedin} rel="noopener" target="_blank" aria-label={linkedinAria}>{linkedinLabel} ↗</a>}
+</article>

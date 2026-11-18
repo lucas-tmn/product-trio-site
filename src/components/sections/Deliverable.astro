@@ -1,0 +1,12 @@
+---
+// Anonymized deliverable (.ds-deliverable): blurred, greyscale, always labelled.
+interface Props { tag: string; caption?: string; placeholder?: string; src?: string; alt?: string; width?: number; height?: number; }
+const { tag, caption, placeholder, src, alt = '', width, height } = Astro.props;
+---
+<figure class="ds-figure">
+  <div class="ds-deliverable">
+    <span class="ds-deliverable__tag">{tag}</span>
+    {src ? <img src={src} alt={alt} width={width} height={height} loading="lazy" /> : <div class="ds-ph deliverable-ph">{placeholder}</div>}
+  </div>
+  {caption && <figcaption class="ds-caption mt-2">{caption}</figcaption>}
+</figure>

@@ -1,0 +1,151 @@
+---
+import Base from '../../layouts/Base.astro';
+import Chip from '../../components/core/Chip.astro';
+import Field from '../../components/core/Field.astro';
+import Button from '../../components/core/Button.astro';
+import SectionHeader from '../../components/sections/SectionHeader.astro';
+import MetricTile from '../../components/sections/MetricTile.astro';
+import ProblemItem from '../../components/sections/ProblemItem.astro';
+import ProcessStep from '../../components/sections/ProcessStep.astro';
+import Callout from '../../components/sections/Callout.astro';
+import CtaBand from '../../components/sections/CtaBand.astro';
+import Deliverable from '../../components/sections/Deliverable.astro';
+import ServiceCard from '../../components/cards/ServiceCard.astro';
+import CaseCard from '../../components/cards/CaseCard.astro';
+import EngagementCard from '../../components/cards/EngagementCard.astro';
+import TeamCard from '../../components/cards/TeamCard.astro';
+import { getContent, path, fill, staticLangPaths, type Lang } from '../../i18n/utils';
+
+export const getStaticPaths = staticLangPaths;
+const lang = Astro.params.lang as Lang;
+const t = getContent(lang);
+const pad = (i: number) => String(i + 1).padStart(2, '0');
+const total = t.work.cases.length;
+---
+<Base lang={lang}>
+  <section class="ds-section section--hero" data-band="indigo">
+    <div class="ds-container">
+      <div class="hero">
+        <div class="stack">
+          <span class="ds-eyebrow hero__eyebrow">{t.hero.eyebrow}</span>
+          <h1 class="ds-display">{t.hero.title}</h1>
+          <p class="ds-body-l lead-measure">{t.hero.lead}</p>
+          <div class="row">
+            <Button variant="on-dark" href="#contact">{t.hero.primary}</Button>
+            <Button variant="ghost-dark" href="#work">{t.hero.secondary}</Button>
+          </div>
+        </div>
+        <Deliverable tag={t.labels.anonymized} placeholder={t.hero.visual} />
+      </div>
+      <div class="ds-proof proof-gap">
+        {t.proof.map((p) => <MetricTile value={p.value} label={p.label} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="ds-section" aria-labelledby="problem-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.problem.eyebrow} title={t.problem.title} id="problem-h" />
+      <div class="ds-grid-3">
+        {t.problem.items.map((i, k) => <ProblemItem n={pad(k)} title={i.title} body={i.body} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="ds-section section--surface" id="services" aria-labelledby="services-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.services.eyebrow} title={t.services.title} lead={t.services.lead} id="services-h" />
+      <div class="ds-grid-3">
+        {t.services.items.map((s) => <ServiceCard title={s.title} body={s.body} tags={s.tags} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="ds-section" id="approach" aria-labelledby="approach-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.approach.eyebrow} title={t.approach.title} id="approach-h" />
+      <div class="steps">
+        {t.approach.steps.map((s, k) => <ProcessStep n={pad(k)} title={s.title} body={s.body} />)}
+      </div>
+      <div class="callout-gap">
+        <Callout eyebrow={t.approach.callout.eyebrow} title={t.approach.callout.title} body={t.approach.callout.body} />
+      </div>
+    </div>
+  </section>
+
+  <section class="ds-section" id="work" data-band="indigo-2" aria-labelledby="work-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.work.eyebrow} title={t.work.title} id="work-h" />
+      <div class="ds-pills" id="filters" role="group" aria-label={t.work.filterLabel}>
+        {t.work.filters.map((f, i) => <Chip label={f.label} selected={i === 0} data-filter={f.id} />)}
+      </div>
+      <p class="ds-caption count mt-6" id="count" aria-live="polite" data-template={t.work.countTemplate}>
+        {fill(t.work.countTemplate, { n: total, total })}
+      </p>
+      <div class="ds-grid-3" id="cases">
+        {t.work.cases.map((c) => (
+          <CaseCard
+            industry={c.industry} title={c.title} metric={c.metric} metricLabel={c.metricLabel} owner={c.owner}
+            href={c.link ? path(lang, t.case.path) : undefined} data-type={c.type}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="ds-section" id="engagement" aria-labelledby="engagement-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.engagement.eyebrow} title={t.engagement.title} id="engagement-h" />
+      <div class="ds-grid-3">
+        {t.engagement.items.map((e) => (
+          <EngagementCard
+            name={e.name} summary={e.summary} from={e.from} items={e.items} cta={e.cta}
+            featured={e.featured} fromLabel={t.labels.startingFrom} featuredLabel={t.labels.recommended}
+          />
+        ))}
+      </div>
+      <p class="mt-8"><a class="ds-link" href={path(lang, 'pricing')}>{t.nav.pricing} →</a></p>
+    </div>
+  </section>
+
+  <section class="ds-section section--surface" id="team" aria-labelledby="team-h">
+    <div class="ds-container">
+      <SectionHeader eyebrow={t.team.eyebrow} title={t.team.title} id="team-h" />
+      <div class="ds-grid-3">
+        {t.team.members.map((m) => (
+          <TeamCard
+            name={m.name} role={m.role} bio={m.bio} linkedin={m.linkedin || undefined}
+            portraitAlt={`${t.labels.portraitAlt} ${m.name}`} linkedinLabel={t.labels.linkedin} linkedinAria={`${t.labels.linkedinAria} ${m.name}`}
+          />
+        ))}
+      </div>
+      <p class="ds-body-l mt-8">{t.team.note}</p>
+    </div>
+  </section>
+
+  <section class="ds-section" id="contact" aria-labelledby="contact-h">
+    <div class="ds-container">
+      <div class="split">
+        <div class="stack--sm stack">
+          <span class="ds-eyebrow">{t.contact.eyebrow}</span>
+          <h2 class="ds-h2" id="contact-h">{t.contact.title}</h2>
+          <p class="ds-body-l">{t.contact.lead}</p>
+        </div>
+        <form id="contact-form" class="stack" novalidate data-email={t.contact.email} data-subject={t.contact.form.subject} data-success={t.contact.form.success}>
+          <Field id="cf-name" name="name" label={t.contact.form.name} autocomplete="name" required errorMessage={t.contact.form.nameError} />
+          <Field id="cf-email" name="email" type="email" label={t.contact.form.email} autocomplete="email" required hint={t.contact.form.emailHint} errorMessage={t.contact.form.emailError} />
+          <Field id="cf-need" name="need" type="select" label={t.contact.form.need} options={t.contact.form.needOptions} />
+          <Field id="cf-context" name="context" type="textarea" label={t.contact.form.context} placeholder={t.contact.form.contextPlaceholder} />
+          <div><Button variant="primary" type="submit">{t.contact.form.send}</Button></div>
+          <div class="ds-alert ds-alert--success" id="cf-ok" role="status" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="ds-section section--flush-top">
+    <div class="ds-container">
+      <CtaBand title={t.cta.title} primary={{ label: t.labels.bookCall, href: '#contact' }} secondary={{ label: t.labels.seeWork, href: '#work' }} />
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  brand?: string;
+  tagline?: string;
+  columns: { title: string; links: { label: string; href: string }[] }[];
+  legal?: string;
+  location?: string;
+}
+const { brand = '[Team Name]', tagline, columns, legal, location } = Astro.props;
+---
+<footer class="ds-footer">
+  <div class="ds-container">
+    <div class="ds-footer__grid">
+      <div>
+        <div class="ds-logo"><span class="ds-logo__slot" aria-hidden="true"></span>{brand}</div>
+        {tagline && <p class="ds-body-s secondary-text lead-measure">{tagline}</p>}
+      </div>
+      {columns.map((c) => (
+        <nav aria-label={c.title}>
+          <div class="ds-eyebrow mt-2">{c.title}</div>
+          {c.links.map((l) => <div><a href={l.href}>{l.label}</a></div>)}
+        </nav>
+      ))}
+    </div>
+    <div class="ds-footer__legal ds-caption"><span>{legal}</span>{location && <span>{location}</span>}</div>
+  </div>
+</footer>

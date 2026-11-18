@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import SectionHeader from '../../components/sections/SectionHeader.astro';
+import CtaBand from '../../components/sections/CtaBand.astro';
+import { getContent, path, staticLangPaths, type Lang } from '../../i18n/utils';
+
+export const getStaticPaths = staticLangPaths;
+const lang = Astro.params.lang as Lang;
+const t = getContent(lang);
+const p = t.pricing;
+---
+<Base lang={lang} page={p.path} current="pricing" title={`${p.title} · ${t.meta.title}`}>
+  <div class="ds-container page-pad">
+    <SectionHeader level="h1" eyebrow={p.eyebrow} title={p.title} lead={p.lead} />
+    <div class="scroll-x" role="region" aria-label={p.title} tabindex="0">
+      <table class="ds-compare">
+        <thead>
+          <tr><td></td>{p.columns.map((c) => <th scope="col">{c}</th>)}</tr>
+        </thead>
+        <tbody>
+          {p.rows.map((r) => (
+            <tr><th scope="row">{r.label}</th>{r.values.map((v) => <td>{v}</td>)}</tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-16">
+      <CtaBand title={t.cta.title} primary={{ label: t.labels.bookCall, href: `${path(lang)}#contact` }} secondary={{ label: t.labels.seeWork, href: `${path(lang)}#work` }} />
+    </div>
+  </div>
+</Base>

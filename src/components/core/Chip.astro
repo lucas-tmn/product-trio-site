@@ -1,0 +1,15 @@
+---
+// Static chip by default. Pass `selected` (boolean) to get a single-select filter pill.
+interface Props {
+  label: string;
+  outline?: boolean;
+  selected?: boolean;
+  [key: string]: unknown;
+}
+const { label, outline, selected, ...rest } = Astro.props;
+---
+{selected !== undefined ? (
+  <button type="button" class="ds-pill" aria-pressed={selected ? 'true' : 'false'} {...rest}>{label}</button>
+) : (
+  <span class:list={['ds-chip', { 'ds-chip--outline': outline }]}>{label}</span>
+)}

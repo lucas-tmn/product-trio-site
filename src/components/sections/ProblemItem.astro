@@ -1,0 +1,6 @@
+---
+// Problem/insight item (.ds-insight) documented in guidelines/components.md; no JSX reference existed.
+interface Props { n: string; title: string; body: string; }
+const { n, title, body } = Astro.props;
+---
+<div class="ds-insight"><span class="ds-insight__n">{n}</span><div><h3 class="ds-h4">{title}</h3><p class="ds-body-s secondary-text mt-2">{body}</p></div></div>

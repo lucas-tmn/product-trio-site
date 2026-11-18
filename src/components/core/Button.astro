@@ -1,0 +1,16 @@
+---
+interface Props {
+  variant?: 'primary' | 'secondary' | 'on-dark' | 'ghost-dark';
+  href?: string;
+  disabled?: boolean;
+  type?: 'button' | 'submit';
+  [key: string]: unknown;
+}
+const { variant = 'primary', href, disabled, type = 'button', ...rest } = Astro.props;
+const cls = `ds-btn ds-btn--${variant}`;
+---
+{href ? (
+  <a class={cls} href={href} aria-disabled={disabled ? 'true' : undefined} {...rest}><slot /></a>
+) : (
+  <button class={cls} type={type} disabled={disabled} {...rest}><slot /></button>
+)}

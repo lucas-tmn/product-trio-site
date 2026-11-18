@@ -1,0 +1,27 @@
+:root {
+  /* 4px base; --space-N = N * 4px except where noted */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 20px;
+  --space-6: 24px; --space-8: 32px; --space-10: 40px; --space-12: 48px; --space-16: 64px; --space-22: 88px;
+
+  --radius-card: 14px; --radius-control: 10px; --radius-pill: 999px; --radius-sm: 6px;
+  --border-hairline: 1px solid var(--color-border);
+  --border-control: 1px solid var(--color-border-control);
+  --border-width-focus: 3px; --focus-offset: 2px;
+
+  /* Elevation: flat by default. One soft level for floating UI (sticky nav, menus). */
+  --elevation-0: none;
+  --elevation-1: 0 1px 2px rgba(15,31,61,.06), 0 4px 16px rgba(15,31,61,.06);
+
+  --motion-fast: 150ms; --motion-base: 200ms; --motion-slow: 250ms;
+  --motion-ease: cubic-bezier(.2,.0,.2,1);
+
+  --container-max: 1120px; --container-reading: 720px; --gutter: 24px;
+  --section-space: 64px; --touch-min: 44px;
+  /* breakpoints (use in @media; custom props can't be used in queries): sm 480 / md 768 / lg 1024 / xl 1280 */
+  --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1280px;
+}
+@media (max-width: 767px) { :root { --section-space: 48px; } }
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0ms; --motion-base: 0ms; --motion-slow: 0ms; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0ms !important; animation-duration: 0ms !important; }
+}

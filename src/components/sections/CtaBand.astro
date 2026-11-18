@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  body?: string;
+  primary: { label: string; href: string };
+  secondary?: { label: string; href: string };
+}
+const { title, body, primary, secondary } = Astro.props;
+---
+<div data-band="indigo" class="ds-band ds-cta">
+  <div class="cta-copy">
+    <h2 class="ds-h2">{title}</h2>
+    {body && <p class="ds-body-l mt-3">{body}</p>}
+  </div>
+  <div class="ds-cta__actions">
+    <a class="ds-btn ds-btn--on-dark" href={primary.href}>{primary.label}</a>
+    {secondary && <a class="ds-btn ds-btn--ghost-dark" href={secondary.href}>{secondary.label}</a>}
+  </div>
+</div>

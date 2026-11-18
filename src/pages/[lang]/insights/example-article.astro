@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getContent, path, staticLangPaths, type Lang } from '../../../i18n/utils';
+
+export const getStaticPaths = staticLangPaths;
+const lang = Astro.params.lang as Lang;
+const t = getContent(lang);
+const a = t.article;
+---
+<Base lang={lang} page={a.path} title={`${a.title} · ${t.meta.title}`}>
+  <article class="ds-container page-pad">
+    <header class="ds-prose mt-2">
+      <span class="ds-eyebrow">{a.eyebrow}</span>
+      <h1 class="ds-h1 mt-3">{a.title}</h1>
+      <p class="ds-caption mt-3">{a.byline}</p>
+    </header>
+    <div class="ds-prose mt-8">
+      <p>{a.intro}</p>
+      <h2 class="ds-h2">{a.subhead}</h2>
+      <p>{a.body1}</p>
+      <blockquote class="ds-pullquote">{a.quote}</blockquote>
+      <p>{a.body2}</p>
+      <aside class="ds-author mt-12">
+        <div class="ds-portrait"><span class="ds-portrait__initials" aria-hidden="true">{a.authorInitials}</span></div>
+        <div><h3 class="ds-h4">{a.authorName}</h3><p class="ds-body-s secondary-text">{a.authorBio}</p></div>
+      </aside>
+      <p class="mt-8"><a class="ds-link" href={path(lang)}>← {t.labels.backHome}</a></p>
+    </div>
+  </article>
+</Base>

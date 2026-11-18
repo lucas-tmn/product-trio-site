@@ -1,0 +1,70 @@
+---
+import '../styles/index.css';
+import NavBar from '../components/core/NavBar.astro';
+import Footer from '../components/core/Footer.astro';
+import { getContent, path, fill, type Lang } from '../i18n/utils';
+import interLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import jakartaLatin from '@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2?url';
+
+interface Props { lang: Lang; page?: string; current?: 'pricing'; title?: string; }
+const { lang, page = '', current, title } = Astro.props;
+const t = getContent(lang);
+const other: Lang = lang === 'en' ? 'vi' : 'en';
+const home = path(lang);
+const links = [
+  { label: t.nav.services, href: `${home}#services` },
+  { label: t.nav.work, href: `${home}#work` },
+  { label: t.nav.pricing, href: path(lang, 'pricing'), current: current === 'pricing' },
+  { label: t.nav.team, href: `${home}#team` },
+  { label: t.nav.contact, href: `${home}#contact` },
+];
+const langHrefs = { EN: path('en', page), VI: path('vi', page) };
+const year = new Date().getFullYear();
+const footerColumns = [
+  { title: t.footer.site, links: [
+    { label: t.nav.services, href: `${home}#services` },
+    { label: t.nav.work, href: `${home}#work` },
+    { label: t.nav.team, href: `${home}#team` },
+  ] },
+  { title: t.footer.contact, links: [
+    { label: t.contact.email, href: `mailto:${t.contact.email}` },
+    { label: 'LinkedIn', href: t.team.members[0].linkedin },
+  ] },
+];
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ?? t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    <meta name="robots" content="noindex" />
+    <link rel="alternate" hreflang="en" href={new URL(path('en', page), Astro.site)} />
+    <link rel="alternate" hreflang="vi" href={new URL(path('vi', page), Astro.site)} />
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={jakartaLatin} as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.a11y.skip}</a>
+    <NavBar
+      homeHref={home}
+      links={links}
+      lang={lang.toUpperCase() as 'EN' | 'VI'}
+      langHrefs={langHrefs}
+      labels={{ primary: t.a11y.primaryNav, language: t.a11y.language, menu: t.a11y.menu, close: t.a11y.close }}
+    />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer
+      tagline={t.footer.tagline}
+      columns={footerColumns}
+      legal={fill(t.footer.legal, { year })}
+      location={t.footer.location}
+    />
+    <script>
+      import '../scripts/ui.ts';
+    </script>
+  </body>
+</html>

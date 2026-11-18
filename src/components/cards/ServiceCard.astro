@@ -1,0 +1,11 @@
+---
+import Chip from '../core/Chip.astro';
+interface Props { title: string; body: string; tags?: string[]; href?: string; }
+const { title, body, tags = [], href } = Astro.props;
+const Tag = href ? 'a' : 'article';
+---
+<Tag class="ds-card" href={href}>
+  <h3 class="ds-h3">{title}</h3>
+  <p class="ds-body-s">{body}</p>
+  <div class="ds-card__tags">{tags.map((t) => <Chip label={t} />)}</div>
+</Tag>

@@ -1,0 +1,8 @@
+---
+interface Props { eyebrow: string; title: string; body?: string; }
+const { eyebrow, title, body } = Astro.props;
+---
+<div class="ds-callout">
+  <span class="ds-callout__mark" aria-hidden="true"></span>
+  <div><span class="ds-eyebrow">{eyebrow}</span><h3 class="ds-h3 mt-2">{title}</h3>{body && <p class="ds-body-s mt-2">{body}</p>}</div>
+</div>

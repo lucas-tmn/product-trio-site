@@ -1,0 +1,5 @@
+---
+interface Props { n: string; title: string; body: string; }
+const { n, title, body } = Astro.props;
+---
+<div class="ds-step"><span class="ds-step__n">{n}</span><h3 class="ds-h4">{title}</h3><p class="ds-body-s secondary-text">{body}</p></div>

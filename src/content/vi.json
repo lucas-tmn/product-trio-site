@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "[Tên team] · Chiến lược sản phẩm, triển khai và data/AI",
+    "description": "Đội ba chuyên gia senior tại Việt Nam. Chiến lược sản phẩm, triển khai và sẵn sàng data/AI cho doanh nghiệp trong nước và quốc tế."
+  },
+  "a11y": { "skip": "Chuyển đến nội dung", "primaryNav": "Điều hướng chính", "language": "Ngôn ngữ", "menu": "Menu", "close": "Đóng" },
+  "nav": { "services": "Dịch vụ", "work": "Dự án", "pricing": "Chi phí", "team": "Đội ngũ", "contact": "Liên hệ" },
+  "labels": {
+    "anonymized": "Đã ẩn danh",
+    "startingFrom": "Chỉ từ",
+    "recommended": "Điểm khởi đầu nên chọn",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Hồ sơ LinkedIn của",
+    "portraitAlt": "Ảnh chân dung của",
+    "bookCall": "Đặt lịch trao đổi",
+    "seeWork": "Xem dự án",
+    "backHome": "Về trang chủ"
+  },
+  "hero": {
+    "eyebrow": "Chiến lược sản phẩm · Triển khai · Data & AI",
+    "title": "Từ con số 0 đến quy mô lớn. Product, delivery và data/AI do chính người senior thực hiện, không cồng kềnh như agency.",
+    "lead": "Đội ba chuyên gia senior tại Việt Nam. Chúng tôi đưa sản phẩm và vận hành từ khám phá đến áp dụng thực tế, ở nhiều ngành khác nhau.",
+    "primary": "Đặt lịch trao đổi 30 phút",
+    "secondary": "Xem dự án tiêu biểu",
+    "visual": "[sơ đồ kiến trúc hoặc wireframe đã làm mờ]"
+  },
+  "proof": [
+    { "value": "100,000+", "label": "cửa hàng được đưa lên một nền tảng đặt hàng B2B" },
+    { "value": "4+", "label": "quốc gia triển khai trên một sản phẩm lõi" },
+    { "value": "3", "label": "chuyên gia senior tham gia mọi dự án" }
+  ],
+  "problem": {
+    "eyebrow": "Vấn đề",
+    "title": "Phần lớn sản phẩm số thất bại vì chiến lược, không phải vì code.",
+    "items": [
+      { "title": "Mục tiêu lệch nhau", "body": "Kinh doanh, vận hành và công nghệ mỗi bên tối ưu một kết quả khác nhau." },
+      { "title": "Tuyển người quá sớm", "body": "Lãnh đạo product toàn thời gian được thuê khi bài toán còn chưa rõ." },
+      { "title": "Pilot bị dừng giữa chừng", "body": "Bản demo tốt nhưng không có kế hoạch áp dụng và không có người chịu trách nhiệm sau khi ra mắt." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Dịch vụ",
+    "title": "Sáu dịch vụ, một đội senior",
+    "lead": "Mỗi dịch vụ kết thúc bằng một quyết định đã được đưa ra hoặc một hệ thống đang được dùng, không phải một bộ slide.",
+    "items": [
+      { "title": "Khám phá sản phẩm 0→1", "body": "Chiến lược, phạm vi MVP, business case và đánh giá nên tự xây hay mua, để bản phát hành đầu tiên trả lời đúng câu hỏi.", "tags": ["Chiến lược", "MVP", "Xây hay mua"] },
+      { "title": "Triển khai và mở rộng", "body": "Triển khai Agile, UAT, sẵn sàng phát hành và quản trị thay đổi cho đến khi người dùng thực sự dùng sản phẩm.", "tags": ["Agile", "UAT", "Áp dụng"] },
+      { "title": "Số hóa quy trình", "body": "Giấy tờ, bảng tính và công cụ cũ được thay bằng hệ thống mà đội vận hành sẵn sàng sử dụng.", "tags": ["Hệ thống cũ", "Vận hành", "Tích hợp"] },
+      { "title": "Sẵn sàng cho data và AI", "body": "Định nghĩa KPI, quản trị dữ liệu và semantic model, để AI chạy trên những con số mà doanh nghiệp tin cậy.", "tags": ["KPI", "Quản trị", "AI"] },
+      { "title": "Lãnh đạo product bán thời gian", "body": "Một lãnh đạo product senior làm việc trong đội của bạn, không cần tuyển toàn thời gian.", "tags": ["Retainer", "Lộ trình"] },
+      { "title": "Đánh giá nhà cung cấp", "body": "Mức độ phù hợp, chi phí, khả năng mở rộng, công sức tích hợp và bảo mật được đánh giá trước khi ký hợp đồng.", "tags": ["Lựa chọn", "Hợp đồng"] }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Cách làm",
+    "title": "Bốn bước từ câu hỏi đến sản phẩm được áp dụng",
+    "steps": [
+      { "title": "Khám phá", "body": "Vẽ lại quy trình và các điểm ra quyết định. Tìm đúng bài toán." },
+      { "title": "Định nghĩa", "body": "Thống nhất phạm vi, KPI và các đánh đổi trước khi xây bất cứ thứ gì." },
+      { "title": "Triển khai", "body": "Phát hành theo từng phần nhỏ, mỗi phần có một người chịu trách nhiệm." },
+      { "title": "Áp dụng", "body": "Đào tạo, đo lường và cải tiến cho đến khi con số thay đổi." }
+    ],
+    "callout": {
+      "eyebrow": "Sẵn sàng mở rộng",
+      "title": "Cần hơn ba người? Đối tác được sàng lọc trước khi tham gia.",
+      "body": "Đối tác kỹ thuật và thiết kế được đánh giá về mức độ phù hợp, chi phí, khả năng mở rộng và bảo mật bởi chính những người sẽ điều hành dự án của bạn."
+    }
+  },
+  "work": {
+    "eyebrow": "Dự án tiêu biểu",
+    "title": "Dự án tiêu biểu, kèm con số",
+    "filterLabel": "Lọc theo dịch vụ",
+    "countTemplate": "Hiển thị {n} trên {total} dự án",
+    "filters": [
+      { "id": "all", "label": "Tất cả" },
+      { "id": "mvp", "label": "MVP 0→1" },
+      { "id": "rollout", "label": "Mở rộng và triển khai" },
+      { "id": "digitalization", "label": "Số hóa quy trình" },
+      { "id": "data", "label": "Sẵn sàng dữ liệu" }
+    ],
+    "cases": [
+      { "type": "mvp", "industry": "Bán lẻ · B2B", "title": "Nền tảng đặt hàng B2B cho cửa hàng tạp hóa", "metric": "100,000+", "metricLabel": "cửa hàng được đưa lên đặt hàng trực tuyến", "owner": "Phụ trách: Lucas Trịnh, product", "link": true },
+      { "type": "rollout", "industry": "Di chuyển · Đa thị trường", "title": "Nền tảng vận hành tài xế và đội xe triển khai tại hơn bốn quốc gia", "metric": "4+", "metricLabel": "quốc gia trên một sản phẩm lõi, cấu hình theo quy định lao động từng nước", "owner": "Phụ trách: Lucas Trịnh, product" },
+      { "type": "digitalization", "industry": "Logistics", "title": "Theo dõi vận tải đầu cuối cho khách hàng B2B và nhà vận chuyển", "metric": "100%", "metricLabel": "mục tiêu triển khai tại Việt Nam đã đạt", "owner": "Phụ trách: Lucas Trịnh, product" },
+      { "type": "data", "industry": "Chuỗi cung ứng · Sản xuất", "title": "Thống nhất định nghĩa KPI và control tower phục vụ quyết định kế hoạch", "metric": "[số liệu]", "metricLabel": "[kết quả trong một dòng]", "owner": "Phụ trách: Lucas Trịnh, product" },
+      { "type": "mvp", "industry": "[Ngành]", "title": "[Khách hàng và dự án đã ẩn danh]", "metric": "[số liệu]", "metricLabel": "[kết quả trong một dòng]", "owner": "Phụ trách: [Luận], chiến lược sản phẩm" },
+      { "type": "rollout", "industry": "[Ngành]", "title": "[Khách hàng và dự án đã ẩn danh]", "metric": "[số liệu]", "metricLabel": "[kết quả trong một dòng]", "owner": "Phụ trách: Dương Tăng, delivery" }
+    ]
+  },
+  "engagement": {
+    "eyebrow": "Hình thức hợp tác",
+    "title": "Chọn hình thức phù hợp với câu hỏi của bạn",
+    "items": [
+      { "name": "Discovery sprint", "summary": "2 đến 4 tuần, một quyết định được chốt.", "from": "[Giá]", "items": ["Blueprint và phạm vi", "Phân tích xây hay mua", "Prototype có thể thao tác"], "cta": "Trao đổi về sprint", "featured": true },
+      { "name": "Embedded squad", "summary": "Phí hằng tháng, làm việc ngay trong đội của bạn.", "from": "[Giá / tháng]", "items": ["Lead product, delivery và data", "Rà soát lộ trình hằng tuần"], "cta": "Trao đổi về retainer", "featured": false },
+      { "name": "Triển khai trọn gói", "summary": "Theo mốc bàn giao, từ MVP đã xác định phạm vi đến vận hành ổn định.", "from": "[Giá]", "items": ["Mốc bàn giao và người phụ trách cố định", "Đối tác được thẩm định khi cần"], "cta": "Trao đổi về triển khai", "featured": false }
+    ]
+  },
+  "team": {
+    "eyebrow": "Đội ngũ",
+    "title": "Ba chuyên gia senior trong mọi dự án",
+    "note": "Bạn làm việc trực tiếp với cả ba người chúng tôi. Không giao lại cho người mới.",
+    "members": [
+      { "name": "Lucas Trịnh", "role": "Chiến lược sản phẩm · Chuỗi cung ứng và dữ liệu", "bio": "15 năm trong logistics, bán lẻ và di chuyển. Đã triển khai nền tảng tài xế tại hơn bốn quốc gia và nền tảng B2B cho hơn 100.000 cửa hàng.", "linkedin": "https://linkedin.com/in/mnhut-trinh" },
+      { "name": "Luận [Họ]", "role": "Head of Product", "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]", "linkedin": "" },
+      { "name": "Dương Tăng", "role": "Delivery", "bio": "[Tiểu sử hai dòng: số năm, ngành, một kết quả kèm con số.]", "linkedin": "" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Liên hệ",
+    "title": "Hãy cho chúng tôi biết quyết định bạn cần đưa ra",
+    "lead": "Phản hồi trong hai ngày làm việc, kèm đề xuất bước tiếp theo.",
+    "email": "hello@example.com",
+    "form": {
+      "name": "Họ tên",
+      "email": "Email công việc",
+      "emailHint": "Địa chỉ của bạn chỉ dùng để phản hồi.",
+      "emailError": "Nhập email theo dạng ten@congty.com",
+      "nameError": "Nhập họ tên của bạn",
+      "need": "Bạn cần gì?",
+      "needOptions": ["Chiến lược sản phẩm", "Triển khai", "Sẵn sàng cho data và AI", "Chưa chắc"],
+      "context": "Bối cảnh",
+      "contextPlaceholder": "[Hai câu về tình huống của bạn]",
+      "send": "Gửi tin nhắn",
+      "success": "Ứng dụng email của bạn sẽ mở với nội dung đã soạn sẵn. Nếu không, hãy viết tới",
+      "subject": "Liên hệ từ website"
+    }
+  },
+  "cta": { "title": "Có sản phẩm cần xây, sửa hoặc mở rộng?" },
+  "footer": {
+    "tagline": "Đội product, delivery và data/AI senior tại TP. Hồ Chí Minh.",
+    "site": "Trang web",
+    "contact": "Liên hệ",
+    "location": "TP. Hồ Chí Minh, Việt Nam",
+    "legal": "© {year} [Tên team]"
+  },
+  "case": {
+    "path": "work/example-case",
+    "eyebrow": "Logistics · Case study",
+    "title": "[Nhà cung cấp logistics top 3 tại Việt Nam]: [kết quả trong một dòng]",
+    "lead": "[Bối cảnh trong một câu: ai, điều gì đang bị đe dọa.]",
+    "proof": [
+      { "value": "−31%", "label": "[kết quả chính]" },
+      { "value": "5 tháng", "label": "[thời gian đạt kết quả]" },
+      { "value": "3", "label": "[vai trò trong đội dự án]" }
+    ],
+    "meta": { "industry": "Ngành", "scope": "Phạm vi", "duration": "Thời lượng", "industryValue": "[Ngành]", "scopeValue": "[Phạm vi]", "durationValue": "[Thời lượng]" },
+    "sections": [
+      { "eyebrow": "Bối cảnh", "title": "Tình huống", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" },
+      { "eyebrow": "Thách thức", "title": "Điểm vướng", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" },
+      { "eyebrow": "Quyết định", "title": "Quyết định chính và các đánh đổi", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" },
+      { "eyebrow": "Kết quả", "title": "Kết quả", "body": "[Hai đến bốn câu. Mỗi nhận định có một con số, một vai trò hoặc một quyết định. Nêu phương án bị loại và lý do.]" }
+    ],
+    "deliverables": [
+      { "placeholder": "[wireframe]", "caption": "Wireframe, chi tiết đã làm mờ" },
+      { "placeholder": "[sơ đồ kiến trúc]", "caption": "Sơ đồ kiến trúc, chi tiết đã làm mờ" },
+      { "placeholder": "[lộ trình]", "caption": "Lộ trình, chi tiết đã làm mờ" }
+    ],
+    "ctaTitle": "Đang đứng trước một quyết định tương tự?"
+  },
+  "article": {
+    "path": "insights/example-article",
+    "eyebrow": "Góc nhìn · 6 phút đọc",
+    "title": "[Tiêu đề bài viết nêu rõ phát hiện]",
+    "byline": "[Tác giả] · [Ngày]",
+    "intro": "[Đoạn mở đầu cỡ 18px / 1.7, độ rộng 720px. Nêu phát hiện ngay trong hai câu đầu.]",
+    "subhead": "[Tiêu đề phụ]",
+    "body1": "[Đoạn nội dung. Mỗi nhận định có một con số, một vai trò hoặc một quyết định.]",
+    "quote": "“[Câu trích: một câu, một con số thật.]”",
+    "body2": "[Đoạn nội dung.]",
+    "authorName": "[Tên tác giả]",
+    "authorBio": "[Vai trò. Một dòng về kinh nghiệm liên quan.]",
+    "authorInitials": "TG"
+  },
+  "pricing": {
+    "path": "pricing",
+    "eyebrow": "Hình thức hợp tác",
+    "title": "[Chỉ từ, theo từng hình thức hợp tác]",
+    "lead": "[Giá là mức khởi điểm; phạm vi công việc quyết định con số cuối cùng.]",
+    "columns": ["Discovery sprint", "Embedded squad", "Triển khai trọn gói"],
+    "rows": [
+      { "label": "Chỉ từ", "values": ["[Giá]", "[Giá / tháng]", "[Giá]"] },
+      { "label": "Thời lượng", "values": ["[2 đến 4 tuần]", "[3+ tháng]", "[8 đến 12 tuần]"] },
+      { "label": "Đội ngũ", "values": ["[1 đến 2 partner]", "[Partner chính + hỗ trợ]", "[3 partner]"] },
+      { "label": "Kết quả", "values": ["[Một quyết định]", "[Năng lực liên tục]", "[Một kết quả đã phát hành]"] }
+    ]
+  }
+}

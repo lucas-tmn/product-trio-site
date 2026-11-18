@@ -1,0 +1,34 @@
+---
+// errorMessage is pre-rendered hidden; scripts/ui.ts reveals it and wires aria-describedby.
+interface Props {
+  label: string;
+  id: string;
+  type?: 'text' | 'email' | 'textarea' | 'select';
+  options?: string[];
+  hint?: string;
+  error?: string;
+  errorMessage?: string;
+  required?: boolean;
+  placeholder?: string;
+  disabled?: boolean;
+  autocomplete?: string;
+  name?: string;
+}
+const { label, id, type = 'text', options = [], hint, error, errorMessage, required, placeholder, disabled, autocomplete, name } = Astro.props;
+const describedBy = [hint && `${id}-h`, error && `${id}-e`].filter(Boolean).join(' ') || undefined;
+const common = {
+  id, name: name ?? id, class: 'ds-input', required, disabled, placeholder, autocomplete,
+  'aria-invalid': error ? 'true' : undefined,
+  'aria-describedby': describedBy,
+  'data-base-describedby': hint ? `${id}-h` : undefined,
+};
+---
+<div class="ds-field">
+  <label class="ds-label" for={id}>{label}{required ? ' *' : ''}</label>
+  {type === 'textarea' ? <textarea {...common}></textarea>
+    : type === 'select' ? <select {...common}>{options.map((o) => <option>{o}</option>)}</select>
+    : <input type={type} {...common} />}
+  {hint && <span id={`${id}-h`} class="ds-hint">{hint}</span>}
+  {error && <span id={`${id}-e`} class="ds-error" role="alert">{error}</span>}
+  {!error && errorMessage && <span id={`${id}-e`} class="ds-error" role="alert" hidden>{errorMessage}</span>}
+</div>

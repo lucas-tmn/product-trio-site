@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string; summary: string; from?: string; items: string[]; cta: string; href?: string; featured?: boolean;
+  fromLabel?: string; featuredLabel?: string;
+}
+const { name, summary, from, items, cta, href = '#contact', featured, fromLabel = 'Starting from', featuredLabel } = Astro.props;
+---
+<article class:list={['ds-card', { 'ds-card--feature': featured }]}>
+  {featured && featuredLabel && <span class="ds-eyebrow">{featuredLabel}</span>}
+  <h3 class="ds-h3">{name}</h3>
+  <p class="ds-body-s">{summary}</p>
+  {from && <div><span class="ds-caption">{fromLabel}</span><div class="ds-card__price">{from}</div></div>}
+  <ul class="ds-card__list">{items.map((i) => <li>{i}</li>)}</ul>
+  <a class:list={['ds-btn', featured ? 'ds-btn--primary' : 'ds-btn--secondary']} href={href}>{cta}</a>
+</article>

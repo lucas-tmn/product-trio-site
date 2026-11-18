@@ -1,0 +1,34 @@
+---
+interface Props {
+  brand?: string;
+  homeHref: string;
+  links: { label: string; href: string; current?: boolean }[];
+  lang: 'EN' | 'VI';
+  langHrefs: { EN: string; VI: string };
+  labels: { primary: string; language: string; menu: string; close: string };
+}
+const { brand = '[Team Name]', homeHref, links, lang, langHrefs, labels } = Astro.props;
+---
+<header class="ds-nav" id="nav">
+  <div class="ds-container">
+    <div class="ds-nav__row">
+      <a class="ds-logo" href={homeHref}><span class="ds-logo__slot" aria-hidden="true"></span>{brand}</a>
+      <nav aria-label={labels.primary}>
+        <ul class="ds-nav__links">
+          {links.map((l) => <li><a class="ds-nav__link" href={l.href} aria-current={l.current ? 'page' : undefined}>{l.label}</a></li>)}
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <div class="ds-lang" role="group" aria-label={labels.language}>
+          {(['EN', 'VI'] as const).map((x) => (
+            <button type="button" aria-pressed={lang === x ? 'true' : 'false'} data-lang-href={langHrefs[x]} lang={x.toLowerCase()}>{x}</button>
+          ))}
+        </div>
+        <button type="button" class="ds-menu-btn" aria-expanded="false" aria-controls="m-menu" data-label-open={labels.menu} data-label-close={labels.close}>{labels.menu}</button>
+      </div>
+    </div>
+    <div id="m-menu" class="ds-mobile-menu">
+      {links.map((l) => <a href={l.href} aria-current={l.current ? 'page' : undefined}>{l.label}</a>)}
+    </div>
+  </div>
+</header>

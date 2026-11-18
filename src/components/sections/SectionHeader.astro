@@ -1,0 +1,10 @@
+---
+interface Props { eyebrow: string; title: string; lead?: string; id?: string; level?: 'h1' | 'h2'; }
+const { eyebrow, title, lead, id, level = 'h2' } = Astro.props;
+const H = level;
+---
+<div class="ds-sechead">
+  <span class="ds-eyebrow">{eyebrow}</span>
+  <H id={id} class={level === 'h1' ? 'ds-h1' : 'ds-h2'}>{title}</H>
+  {lead && <p class="ds-body-l">{lead}</p>}
+</div>

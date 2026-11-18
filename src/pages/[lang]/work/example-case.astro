@@ -1,0 +1,49 @@
+---
+import Base from '../../../layouts/Base.astro';
+import MetricTile from '../../../components/sections/MetricTile.astro';
+import Deliverable from '../../../components/sections/Deliverable.astro';
+import { getContent, path, staticLangPaths, type Lang } from '../../../i18n/utils';
+
+export const getStaticPaths = staticLangPaths;
+const lang = Astro.params.lang as Lang;
+const t = getContent(lang);
+const c = t.case;
+---
+<Base lang={lang} page={c.path} title={`${c.title} · ${t.meta.title}`}>
+  <div class="ds-container page-pad">
+    <div class="head-narrow stack--sm stack">
+      <span class="ds-eyebrow">{c.eyebrow}</span>
+      <h1 class="ds-h1">{c.title}</h1>
+      <p class="ds-body-l">{c.lead}</p>
+    </div>
+    <div class="ds-proof proof-gap">
+      {c.proof.map((p) => <MetricTile value={p.value} label={p.label} />)}
+    </div>
+    <div class="case-layout mt-12">
+      <dl class="case-meta ds-caption">
+        <dt>{c.meta.industry}</dt><dd>{c.meta.industryValue}</dd>
+        <dt>{c.meta.scope}</dt><dd>{c.meta.scopeValue}</dd>
+        <dt>{c.meta.duration}</dt><dd>{c.meta.durationValue}</dd>
+      </dl>
+      <div class="stack--lg stack">
+        {c.sections.map((s) => (
+          <section>
+            <span class="ds-eyebrow">{s.eyebrow}</span>
+            <h2 class="ds-h3 mt-2">{s.title}</h2>
+            <p class="measure mt-3">{s.body}</p>
+          </section>
+        ))}
+      </div>
+    </div>
+    <div class="ds-grid-3 mt-16">
+      {c.deliverables.map((d) => <Deliverable tag={t.labels.anonymized} placeholder={d.placeholder} caption={d.caption} />)}
+    </div>
+    <div class="mt-16">
+      <div data-band="indigo" class="ds-band ds-cta">
+        <h2 class="ds-h3">{c.ctaTitle}</h2>
+        <a class="ds-btn ds-btn--on-dark" href={`${path(lang)}#contact`}>{t.labels.bookCall}</a>
+      </div>
+    </div>
+    <p class="mt-8"><a class="ds-link" href={path(lang)}>← {t.labels.backHome}</a></p>
+  </div>
+</Base>

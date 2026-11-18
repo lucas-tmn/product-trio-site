@@ -1,0 +1,70 @@
+:root {
+  /* ---- Base palette: Indigo · Tangerine · Mint ---- */
+  --indigo-900: #1a1257;  /* deep band */
+  --indigo-700: #2d1f8a;  /* primary */
+  --indigo-600: #3d2ca6;  /* hover */
+  --indigo-100: #ebe8f8;  /* tint */
+  --ink-900: #1c1a2e;
+  --slate-600: #5b5975;   /* muted */
+  --slate-400: #6a6785;   /* placeholder */
+  --paper-50: #f8f7fb;
+  --white: #ffffff;
+  --line-200: #e2dfee;
+  --line-500: #85809f;    /* control border 3.5:1+ */
+  --tangerine-500: #ff7a1a; /* accent: fills, rules, large numerals, on dark */
+  --tangerine-700: #b34700; /* accent text on light (5.2:1) */
+  --tangerine-100: #ffe9d6;
+  --mint-300: #9fe8c5;      /* highlight */
+  --mint-100: #dff7ea;
+  --green-700:#1f7a4d; --green-100:#e3f1e9;
+  --amber-warn-700:#8a5200; --warn-100:#fbefd5;
+  --red-700:#b3261e; --red-100:#fbe6e4;
+  --blue-600:#0b57d0; --blue-300:#9fe8c5;
+
+  /* ---- Semantic roles (light) ---- */
+  --color-bg: var(--paper-50);
+  --color-surface: var(--white);
+  --color-surface-tint: var(--tangerine-100);
+  --color-text: var(--ink-900);
+  --color-text-heading: var(--indigo-900);
+  --color-text-secondary: var(--slate-600);
+  --color-text-placeholder: var(--slate-400);
+  --color-border: var(--line-200);
+  --color-border-control: var(--line-500);
+  --color-primary: var(--indigo-700);
+  --color-primary-hover: var(--indigo-600);
+  --color-on-primary: var(--white);
+  --color-accent: var(--tangerine-500);
+  --color-accent-text: var(--tangerine-700);
+  --color-accent-soft: var(--tangerine-100);
+  --color-highlight: var(--mint-300);
+  --color-highlight-soft: var(--mint-100);
+  --color-focus: var(--blue-600);
+  --color-success: var(--green-700); --color-success-bg: var(--green-100);
+  --color-warning: var(--amber-warn-700); --color-warning-bg: var(--warn-100);
+  --color-error: var(--red-700); --color-error-bg: var(--red-100);
+  --color-hover-tint: var(--indigo-100);
+
+  /* ---- Dark band ---- */
+  --color-band: var(--indigo-900);
+  --color-band-2: var(--indigo-700);
+  --color-band-text: var(--white);
+  --color-band-text-secondary: #c9c5e6;
+  --color-band-border: rgba(255,255,255,.2);
+  --color-band-accent: var(--tangerine-500);
+  --color-band-highlight: var(--mint-300);
+  --color-band-focus: var(--mint-300);
+}
+[data-band="navy"], [data-band="navy-2"], [data-band="indigo"], [data-band="indigo-2"] {
+  --color-bg: var(--color-band);
+  --color-surface: var(--color-band-2);
+  --color-text: var(--color-band-text);
+  --color-text-heading: var(--color-band-text);
+  --color-text-secondary: var(--color-band-text-secondary);
+  --color-border: var(--color-band-border);
+  --color-accent-text: var(--color-band-accent);
+  --color-focus: var(--color-band-focus);
+  --color-hover-tint: rgba(255,255,255,.1);
+  background: var(--color-bg); color: var(--color-text);
+}
+[data-band="navy-2"], [data-band="indigo-2"] { --color-bg: var(--color-band-2); --color-surface: var(--color-band); }
